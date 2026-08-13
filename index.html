@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#22c55e">
 <meta name="format-detection" content="telephone=no">
-<title>我的工作台</title>
+<title>鎴戠殑宸ヤ綔鍙?/title>
 <style>
 :root {
   --accent: #22c55e;
@@ -54,7 +54,7 @@ body {
 button { font-family: inherit; cursor: pointer; border: none; background: none; padding: 0; color: inherit; }
 input, textarea, select { font-family: inherit; font-size: 14px; }
 
-/* ========== 顶部 ========== */
+/* ========== 椤堕儴 ========== */
 .topbar {
   position: sticky;
   top: 0;
@@ -109,7 +109,7 @@ input, textarea, select { font-family: inherit; font-size: 14px; }
 .topbar-actions button:hover { background: var(--border-light); color: var(--text); }
 .topbar-actions button svg { width: 18px; height: 18px; }
 
-/* ========== 项目 Tab ========== */
+/* ========== 椤圭洰 Tab ========== */
 .projects {
   display: flex;
   gap: 6px;
@@ -151,14 +151,14 @@ input, textarea, select { font-family: inherit; font-size: 14px; }
 .project-tab.active[data-project="personal"]  { color: #22c55e; border-color: #22c55e; background: rgba(34,197,94,0.08); }
 .project-tab.active[data-project="haixi"]     { color: #f59e0b; border-color: #f59e0b; background: rgba(245,158,11,0.08); }
 
-/* ========== 主容器 ========== */
+/* ========== 涓诲鍣?========== */
 main {
   max-width: 720px;
   margin: 0 auto;
   padding: 16px 12px;
 }
 
-/* ========== 「今天要处理」 ========== */
+/* ========== 銆屼粖澶╄澶勭悊銆?========== */
 .today {
   background: var(--accent);
   color: white;
@@ -248,7 +248,7 @@ body[data-project="haixi"]    .today  { background: linear-gradient(135deg, #f59
 .today-item .btn-done:hover { background: rgba(255,255,255,0.4); }
 .today-item .btn-done svg { width: 14px; height: 14px; }
 
-/* ========== 模块基础 ========== */
+/* ========== 妯″潡鍩虹 ========== */
 .module {
   background: var(--card);
   border-radius: var(--radius);
@@ -295,7 +295,7 @@ body[data-project="haixi"]    .today  { background: linear-gradient(135deg, #f59
 .module-actions button:hover { background: var(--accent-light); border-color: var(--accent); }
 .module-actions button svg { width: 13px; height: 13px; }
 
-/* 模块内 Tabs */
+/* 妯″潡鍐?Tabs */
 .subtabs {
   display: flex;
   border-bottom: 1px solid var(--border-light);
@@ -323,7 +323,7 @@ body[data-project="haixi"]    .today  { background: linear-gradient(135deg, #f59
 .subtab-panel { display: none; padding: 12px; }
 .subtab-panel.active { display: block; }
 
-/* ========== 任务卡片 ========== */
+/* ========== 浠诲姟鍗＄墖 ========== */
 .empty {
   padding: 28px 16px;
   text-align: center;
@@ -441,7 +441,7 @@ body[data-project="haixi"]    .today  { background: linear-gradient(135deg, #f59
 .item-actions button.del:hover { background: var(--danger-bg); color: var(--danger); }
 .item-actions button svg { width: 14px; height: 14px; }
 
-/* ========== 进度条 ========== */
+/* ========== 杩涘害鏉?========== */
 .progress-bar {
   height: 6px;
   background: var(--border-light);
@@ -457,7 +457,7 @@ body[data-project="haixi"]    .today  { background: linear-gradient(135deg, #f59
 }
 .progress-fill.done { background: var(--success); }
 
-/* ========== 目标卡 ========== */
+/* ========== 鐩爣鍗?========== */
 .goal-indep .item-body { display: flex; flex-direction: column; gap: 6px; }
 .progress-control {
   display: flex;
@@ -558,7 +558,7 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 4px;
 }
 
-/* ========== 日历 ========== */
+/* ========== 鏃ュ巻 ========== */
 .cal-toolbar {
   display: flex;
   align-items: center;
@@ -672,7 +672,7 @@ input[type=range]::-moz-range-thumb {
 .cal-legend > div { display: flex; align-items: center; gap: 4px; }
 .cal-legend .cal-dot { width: 8px; height: 8px; }
 
-/* ========== 弹窗 ========== */
+/* ========== 寮圭獥 ========== */
 .modal-mask {
   position: fixed;
   inset: 0;
@@ -780,7 +780,7 @@ input[type=range]::-moz-range-thumb {
 .btn-danger { background: var(--danger); color: white; }
 .btn-block { width: 100%; }
 
-/* 优先级选择 */
+/* 浼樺厛绾ч€夋嫨 */
 .priority-pills {
   display: flex;
   gap: 6px;
@@ -805,10 +805,10 @@ input[type=range]::-moz-range-thumb {
 .priority-pill.active[data-prio="P1"] { background: var(--warn-bg); border-color: var(--warn); }
 .priority-pill.active[data-prio="P2"] { background: var(--border-light); border-color: var(--text-light); }
 
-/* 当天任务列表 */
+/* 褰撳ぉ浠诲姟鍒楄〃 */
 .day-task-list { display: flex; flex-direction: column; gap: 8px; }
 
-/* 备份提示 */
+/* 澶囦唤鎻愮ず */
 .backup-tip {
   background: var(--warn-bg);
   color: #92400e;
@@ -830,7 +830,7 @@ input[type=range]::-moz-range-thumb {
   flex-shrink: 0;
 }
 
-/* 移动端微调 */
+/* 绉诲姩绔井璋?*/
 @media (max-width: 480px) {
   .topbar h1 { font-size: 15px; }
   .module-title { font-size: 14px; }
@@ -844,7 +844,7 @@ input[type=range]::-moz-range-thumb {
 .tiny { font-size: 11px; }
 .hidden { display: none !important; }
 
-/* ========== 减重打卡 ========== */
+/* ========== 鍑忛噸鎵撳崱 ========== */
 .weight-summary {
   padding: 14px;
   display: flex;
@@ -967,7 +967,7 @@ input[type=range]::-moz-range-thumb {
   font-weight: 500;
 }
 
-/* ========== 循环方式选择 ========== */
+/* ========== 寰幆鏂瑰紡閫夋嫨 ========== */
 .recur-options {
   display: flex;
   flex-direction: column;
@@ -1105,7 +1105,7 @@ input[type=range]::-moz-range-thumb {
 .item.inactive { opacity: 0.45; }
 .item.inactive .item-check { cursor: not-allowed; background: var(--bg); }
 
-/* ========== 循环任务检查记录 ========== */
+/* ========== 寰幆浠诲姟妫€鏌ヨ褰?========== */
 .routine-logs {
   margin-top: 8px;
   padding-top: 8px;
@@ -1212,116 +1212,140 @@ input[type=range]::-moz-range-thumb {
   border-left-color: var(--text-lighter);
 }
 .routine-log.converted .log-status { background: var(--text-lighter); }
+
+/* Supabase 浜戝悓姝ョ姸鎬佹寚绀哄櫒 */
+.sync-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text-light);
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+.sync-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+.sync-badge.synced .dot { background: #22c55e; animation: pulse 2s infinite; }
+.sync-badge.syncing .dot { background: #f59e0b; }
+.sync-badge.offline .dot { background: #ef4444; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
 </style>
 </head>
 <body data-project="far-pump">
 
-<!-- 顶部 -->
+<!-- 椤堕儴 -->
 <header class="topbar">
   <div>
     <h1>
       <span class="logo-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
       </span>
-      我的工作台
-    </h1>
+      鎴戠殑宸ヤ綔鍙?    </h1>
     <div class="topbar-meta" id="topDate"></div>
   </div>
   <div class="topbar-actions">
-    <button id="btnExport" title="导出备份" aria-label="导出备份">
+    <span id="syncBadge" class="sync-badge" style="margin-right:8px"><span class="dot"></span>鏈湴</span>
+    <button id="btnExport" title="瀵煎嚭澶囦唤" aria-label="瀵煎嚭澶囦唤">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
     </button>
-    <button id="btnImport" title="导入恢复" aria-label="导入恢复">
+    <button id="btnImport" title="瀵煎叆鎭㈠" aria-label="瀵煎叆鎭㈠">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
     </button>
-    <button id="btnClear" title="清空数据" aria-label="清空数据">
+    <button id="btnClear" title="娓呯┖鏁版嵁" aria-label="娓呯┖鏁版嵁">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
     </button>
   </div>
 </header>
 
-<!-- 项目 Tab -->
+<!-- 椤圭洰 Tab -->
 <nav class="projects" id="projectsNav">
   <button class="project-tab" data-project="far-pump">
     <span class="dot"></span>
-    <span class="name">远方泵业</span>
-    <span class="hint">最重要</span>
+    <span class="name">杩滄柟娉典笟</span>
+    <span class="hint">鏈€閲嶈</span>
   </button>
   <button class="project-tab" data-project="personal">
     <span class="dot"></span>
-    <span class="name">个人生活</span>
-    <span class="hint">第二</span>
+    <span class="name">涓汉鐢熸椿</span>
+    <span class="hint">绗簩</span>
   </button>
   <button class="project-tab" data-project="haixi">
     <span class="dot"></span>
-    <span class="name">海汐</span>
-    <span class="hint">最轻</span>
+    <span class="name">娴锋睈</span>
+    <span class="hint">鏈€杞?/span>
   </button>
 </nav>
 
 <main>
 
-  <!-- 30 条备份提示 -->
+  <!-- 30 鏉″浠芥彁绀?-->
   <div id="backupTip" class="backup-tip hidden">
-    <span>📦 数据已积累到 <strong id="backupCount">30</strong> 条，建议导出备份一下</span>
-    <button id="btnBackupTip">立即备份</button>
+    <span>馃摝 鏁版嵁宸茬Н绱埌 <strong id="backupCount">30</strong> 鏉★紝寤鸿瀵煎嚭澶囦唤涓€涓?/span>
+    <button id="btnBackupTip">绔嬪嵆澶囦唤</button>
   </div>
 
-  <!-- 今天要处理 -->
+  <!-- 浠婂ぉ瑕佸鐞?-->
   <section class="today">
     <div class="today-header">
       <div class="today-title">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-        <span>今天要处理</span>
+        <span>浠婂ぉ瑕佸鐞?/span>
       </div>
       <span class="today-badge" id="todayBadge">0</span>
     </div>
     <div id="todayContent"></div>
   </section>
 
-  <!-- 模块 1: 每日必做 -->
+  <!-- 妯″潡 1: 姣忔棩蹇呭仛 -->
   <section class="module" id="modDaily">
     <header class="module-header">
       <h2 class="module-title">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        每日必做
+        姣忔棩蹇呭仛
       </h2>
     </header>
     <div class="subtabs">
-      <button class="subtab active" data-subtab="routine">🔁 循环任务</button>
-      <button class="subtab" data-subtab="plan">⭐ 今日计划</button>
+      <button class="subtab active" data-subtab="routine">馃攣 寰幆浠诲姟</button>
+      <button class="subtab" data-subtab="plan">猸?浠婃棩璁″垝</button>
     </div>
     <div class="subtab-panel active" data-subtab-panel="routine">
       <div id="routineList" class="item-list"></div>
       <button class="btn btn-secondary btn-block" id="btnAddRoutine" style="margin-top:12px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        添加循环任务
+        娣诲姞寰幆浠诲姟
       </button>
     </div>
     <div class="subtab-panel" data-subtab-panel="plan">
       <div id="planList" class="item-list"></div>
       <button class="btn btn-secondary btn-block" id="btnAddPlan" style="margin-top:12px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        添加今日计划
+        娣诲姞浠婃棩璁″垝
       </button>
     </div>
   </section>
 
-  <!-- 模块 2: 专项待办 -->
+  <!-- 妯″潡 2: 涓撻」寰呭姙 -->
   <section class="module" id="modSpecial">
     <header class="module-header">
       <h2 class="module-title">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-        专项待办
+        涓撻」寰呭姙
       </h2>
       <div class="module-actions">
         <button id="btnToggleDoneSpecial">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          <span id="toggleDoneLabel">显示已完成</span>
+          <span id="toggleDoneLabel">鏄剧ず宸插畬鎴?/span>
         </button>
         <button id="btnAddSpecial">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          添加
+          娣诲姞
         </button>
       </div>
     </header>
@@ -1330,20 +1354,20 @@ input[type=range]::-moz-range-thumb {
     </div>
   </section>
 
-  <!-- 模块 3: 本月目标 -->
+  <!-- 妯″潡 3: 鏈湀鐩爣 -->
   <section class="module" id="modGoals">
     <header class="module-header">
       <h2 class="module-title">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-        本月目标
+        鏈湀鐩爣
       </h2>
     </header>
     <div class="subtabs">
-      <button class="subtab active" data-subtab="indep">📍 独立目标</button>
-      <button class="subtab" data-subtab="group">🧩 拆解目标</button>
-      <button class="subtab" id="btnAddGoal" title="新增目标">
+      <button class="subtab active" data-subtab="indep">馃搷 鐙珛鐩爣</button>
+      <button class="subtab" data-subtab="group">馃З 鎷嗚В鐩爣</button>
+      <button class="subtab" id="btnAddGoal" title="鏂板鐩爣">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        新增
+        鏂板
       </button>
     </div>
     <div class="subtab-panel active" data-subtab-panel="indep">
@@ -1354,52 +1378,51 @@ input[type=range]::-moz-range-thumb {
     </div>
   </section>
 
-  <!-- 模块 4: 日程表 -->
+  <!-- 妯″潡 4: 鏃ョ▼琛?-->
   <section class="module" id="modCalendar">
     <header class="module-header">
       <h2 class="module-title">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        日程表
-      </h2>
+        鏃ョ▼琛?      </h2>
     </header>
     <div class="cal-toolbar">
       <div class="cal-nav">
-        <button id="calPrev" title="上个月"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
-        <button id="calNext" title="下个月"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+        <button id="calPrev" title="涓婁釜鏈?><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button id="calNext" title="涓嬩釜鏈?><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
       </div>
-      <h3 id="calTitle">2026 年 8 月</h3>
-      <button class="cal-today-btn" id="calTodayBtn">今天</button>
+      <h3 id="calTitle">2026 骞?8 鏈?/h3>
+      <button class="cal-today-btn" id="calTodayBtn">浠婂ぉ</button>
     </div>
     <div class="cal-weekdays">
-      <div>日</div><div>一</div><div>二</div><div>三</div><div>四</div><div>五</div><div>六</div>
+      <div>鏃?/div><div>涓€</div><div>浜?/div><div>涓?/div><div>鍥?/div><div>浜?/div><div>鍏?/div>
     </div>
     <div class="cal-grid" id="calGrid"></div>
     <div class="cal-legend">
-      <div><span class="cal-dot" style="background:var(--warn)"></span> 截止日</div>
-      <div><span class="cal-dot" style="background:var(--accent)"></span> 已排期</div>
-      <div><span class="cal-dot" style="background:#94a3b8"></span> 今日计划</div>
+      <div><span class="cal-dot" style="background:var(--warn)"></span> 鎴鏃?/div>
+      <div><span class="cal-dot" style="background:var(--accent)"></span> 宸叉帓鏈?/div>
+      <div><span class="cal-dot" style="background:#94a3b8"></span> 浠婃棩璁″垝</div>
     </div>
   </section>
 
-  <!-- 模块 5: 减重打卡 -->
+  <!-- 妯″潡 5: 鍑忛噸鎵撳崱 -->
   <section class="module" id="modWeight">
     <header class="module-header">
       <h2 class="module-title">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2V5a3 3 0 0 0-3-3z"/><circle cx="10" cy="13" r="1.2" fill="currentColor"/><circle cx="14" cy="13" r="1.2" fill="currentColor"/><path d="M9 17h6"/></svg>
-        减重打卡
+        鍑忛噸鎵撳崱
       </h2>
       <div class="module-actions">
-        <button id="btnWeightSetting" title="设置目标">
+        <button id="btnWeightSetting" title="璁剧疆鐩爣">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          设置
+          璁剧疆
         </button>
-        <button id="btnWeightAdd" title="今日打卡">
+        <button id="btnWeightAdd" title="浠婃棩鎵撳崱">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          打卡
+          鎵撳崱
         </button>
-        <button id="btnWeightImport" title="批量导入历史数据">
+        <button id="btnWeightImport" title="鎵归噺瀵煎叆鍘嗗彶鏁版嵁">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
-          批量
+          鎵归噺
         </button>
       </div>
     </header>
@@ -1407,141 +1430,156 @@ input[type=range]::-moz-range-thumb {
   </section>
 
   <div style="text-align:center;color:var(--text-lighter);font-size:11px;padding:20px 0;">
-    💾 数据存在浏览器本地 · 记得定期导出备份 · 数据 + 项目切换随时切换
+    馃捑 鏁版嵁瀛樺湪娴忚鍣ㄦ湰鍦?路 璁板緱瀹氭湡瀵煎嚭澶囦唤 路 鏁版嵁 + 椤圭洰鍒囨崲闅忔椂鍒囨崲
   </div>
 
 </main>
 
-<!-- 弹窗容器 -->
+<!-- 寮圭獥瀹瑰櫒 -->
 <div id="modalRoot"></div>
 
-<!-- 文件输入（隐藏） -->
+<!-- Supabase 浜戝悓姝?SDK锛坴2锛?-->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- 鏂囦欢杈撳叆锛堥殣钘忥級 -->
 <input type="file" id="fileInput" accept=".json,application/json" style="display:none">
 
 <script>
 'use strict';
 
 // ============================================================
-// 常量与示例数据
+// Supabase 閰嶇疆锛堢湡路瀹炴椂浜戝悓姝ワ級
 // ============================================================
+const SUPABASE_URL = 'https://osrkhrtonhjvrxahndhy.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_dQ4rlhOdwsGV7gbac9EFsA_CLTm5Egb';
+const SUPABASE_TABLE = 'wb_state';
+const SUPABASE_ROW_ID = 'main';
+
+let supabase = null;
+let realtimeChannel = null;
+let syncMode = 'offline';  // 'offline' | 'syncing' | 'synced'
+let suppressSave = false;  // 闃叉瀹炴椂鍥炴斁瑙﹀彂閲嶅淇濆瓨
+
+// ============================================================
+// 甯搁噺涓庣ず渚嬫暟鎹?// ============================================================
 const LS_KEY = 'wb_todo_all';
 const LS_CURRENT_PROJECT = 'wb_todo_current_project';
 const LS_DONE_COLLAPSED = 'wb_todo_done_collapsed';
 
 const PROJECTS = {
-  'far-pump': { name: '远方泵业', color: '#2563eb', hint: '最重要' },
-  'personal': { name: '个人生活', color: '#22c55e', hint: '第二' },
-  'haixi':    { name: '海汐',      color: '#f59e0b', hint: '最轻' }
+  'far-pump': { name: '杩滄柟娉典笟', color: '#2563eb', hint: '鏈€閲嶈' },
+  'personal': { name: '涓汉鐢熸椿', color: '#22c55e', hint: '绗簩' },
+  'haixi':    { name: '娴锋睈',      color: '#f59e0b', hint: '鏈€杞? }
 };
 
 const PRIORITY_LABEL = {
-  'P0': { text: '紧急' },
-  'P1': { text: '重要' },
-  'P2': { text: '普通' }
+  'P0': { text: '绱ф€? },
+  'P1': { text: '閲嶈' },
+  'P2': { text: '鏅€? }
 };
 
 const SAMPLE_DATA = [
-  // ================== 远方泵业（最重要） ==================
+  // ================== 杩滄柟娉典笟锛堟渶閲嶈锛?==================
   {
     id: 'r-routine-fp-1', project: 'far-pump', type: 'routine',
-    title: '泵业车间每日巡检',
-    note: '电机温度 / 轴承 / 控制柜 / 润滑',
+    title: '娉典笟杞﹂棿姣忔棩宸℃',
+    note: '鐢垫満娓╁害 / 杞存壙 / 鎺у埗鏌?/ 娑︽粦',
     history: { '2026-08-10': true, '2026-08-11': true },
     createdAt: '2026-08-01T08:00:00.000Z'
   },
   {
     id: 'p-plan-fp-1', project: 'far-pump', type: 'plan',
-    title: '联系李总确认大单交付',
-    note: '电话 138****0001',
+    title: '鑱旂郴鏉庢€荤‘璁ゅぇ鍗曚氦浠?,
+    note: '鐢佃瘽 138****0001',
     date: '2026-08-12', done: false,
     createdAt: '2026-08-12T09:00:00.000Z'
   },
   {
     id: 's-spec-fp-1', project: 'far-pump', type: 'special',
-    title: '准备泵业展会物料',
-    note: '产品手册 / 报价单 / 客户案例 PPT',
+    title: '鍑嗗娉典笟灞曚細鐗╂枡',
+    note: '浜у搧鎵嬪唽 / 鎶ヤ环鍗?/ 瀹㈡埛妗堜緥 PPT',
     dueDate: '2026-08-10', scheduledDate: '',
     priority: 'P0', done: false,
     createdAt: '2026-08-05T09:00:00.000Z'
   },
   {
     id: 's-spec-fp-2', project: 'far-pump', type: 'special',
-    title: '审核华东区 Q3 报价单',
-    note: '三个项目报价综合审核',
+    title: '瀹℃牳鍗庝笢鍖?Q3 鎶ヤ环鍗?,
+    note: '涓変釜椤圭洰鎶ヤ环缁煎悎瀹℃牳',
     dueDate: '2026-08-12', scheduledDate: '2026-08-12',
     priority: 'P1', done: false,
     createdAt: '2026-08-08T10:00:00.000Z'
   },
   {
     id: 'g-goal-fp-1', project: 'far-pump', type: 'goal-indep',
-    title: '完成 Q3 销售指标',
-    note: '目标 1200 万',
+    title: '瀹屾垚 Q3 閿€鍞寚鏍?,
+    note: '鐩爣 1200 涓?,
     progress: 60, done: false,
     createdAt: '2026-08-01T08:00:00.000Z'
   },
   {
     id: 'r-routine-fp-2', project: 'far-pump', type: 'routine',
-    title: '销售链接检查',
-    note: '检查官网/电商链接是否正常',
+    title: '閿€鍞摼鎺ユ鏌?,
+    note: '妫€鏌ュ畼缃?鐢靛晢閾炬帴鏄惁姝ｅ父',
     history: { '2026-08-12': true },
     recurType: 'workday',
     logs: [
-      { id: 'log-fp-2-1', date: '2026-08-12', status: 'normal', content: '全部链接正常，无异常', convertedToId: null, createdAt: '2026-08-12T10:00:00.000Z' },
-      { id: 'log-fp-2-2', date: '2026-08-11', status: 'anomaly', content: 'XX 电商产品页 404，需技术排查', convertedToId: 's-spec-fp-3', createdAt: '2026-08-11T10:00:00.000Z' }
+      { id: 'log-fp-2-1', date: '2026-08-12', status: 'normal', content: '鍏ㄩ儴閾炬帴姝ｅ父锛屾棤寮傚父', convertedToId: null, createdAt: '2026-08-12T10:00:00.000Z' },
+      { id: 'log-fp-2-2', date: '2026-08-11', status: 'anomaly', content: 'XX 鐢靛晢浜у搧椤?404锛岄渶鎶€鏈帓鏌?, convertedToId: 's-spec-fp-3', createdAt: '2026-08-11T10:00:00.000Z' }
     ],
     createdAt: '2026-08-01T08:00:00.000Z'
   },
   {
     id: 's-spec-fp-3', project: 'far-pump', type: 'special',
-    title: '【销售链接检查】异常跟进 - XX 电商产品页 404',
-    note: '来源：循环任务「销售链接检查」 2026-08-11 的检查记录\n\n异常详情：\nXX 电商产品页 404，需技术排查',
+    title: '銆愰攢鍞摼鎺ユ鏌ャ€戝紓甯歌窡杩?- XX 鐢靛晢浜у搧椤?404',
+    note: '鏉ユ簮锛氬惊鐜换鍔°€岄攢鍞摼鎺ユ鏌ャ€?2026-08-11 鐨勬鏌ヨ褰昞n\n寮傚父璇︽儏锛歕nXX 鐢靛晢浜у搧椤?404锛岄渶鎶€鏈帓鏌?,
     dueDate: '2026-08-13', scheduledDate: '2026-08-13',
     priority: 'P0', done: false,
     createdAt: '2026-08-11T10:00:00.000Z'
   },
 
-  // ================== 个人生活（第二） ==================
+  // ================== 涓汉鐢熸椿锛堢浜岋級 ==================
   {
     id: 'r-routine-p-1', project: 'personal', type: 'routine',
-    title: '每天 30 分钟阅读',
-    note: '微信读书 / 得到',
+    title: '姣忓ぉ 30 鍒嗛挓闃呰',
+    note: '寰俊璇讳功 / 寰楀埌',
     history: { '2026-08-11': true },
     createdAt: '2026-07-15T20:00:00.000Z'
   },
   {
     id: 'p-plan-p-1', project: 'personal', type: 'plan',
-    title: '买菜做饭',
-    note: '西红柿、鸡蛋、青菜',
+    title: '涔拌彍鍋氶キ',
+    note: '瑗跨孩鏌裤€侀浮铔嬨€侀潚鑿?,
     date: '2026-08-12', done: false,
     createdAt: '2026-08-12T12:00:00.000Z'
   },
   {
     id: 's-spec-p-1', project: 'personal', type: 'special',
-    title: '约牙医复诊',
-    note: '周二下午最好',
+    title: '绾︾墮鍖诲璇?,
+    note: '鍛ㄤ簩涓嬪崍鏈€濂?,
     dueDate: '2026-08-15', scheduledDate: '',
     priority: 'P2', done: false,
     createdAt: '2026-08-10T18:00:00.000Z'
   },
   {
     id: 'g-goal-p-1', project: 'personal', type: 'goal-indep',
-    title: '读完《深潜》',
-    note: 'Cal Newport · Deep Work',
+    title: '璇诲畬銆婃繁娼溿€?,
+    note: 'Cal Newport 路 Deep Work',
     progress: 35, done: false,
     createdAt: '2026-07-15T08:00:00.000Z'
   },
 
-  // ================== 海汐（最轻） ==================
+  // ================== 娴锋睈锛堟渶杞伙級 ==================
   {
     id: 'r-routine-h-1', project: 'haixi', type: 'routine',
-    title: '每天处理客户邮件',
+    title: '姣忓ぉ澶勭悊瀹㈡埛閭欢',
     note: '',
     history: {},
     createdAt: '2026-08-01T09:00:00.000Z'
   },
   {
     id: 's-spec-h-1', project: 'haixi', type: 'special',
-    title: '海汐 7 月经营月报',
+    title: '娴锋睈 7 鏈堢粡钀ユ湀鎶?,
     note: '',
     dueDate: '2026-08-14', scheduledDate: '',
     priority: 'P1', done: false,
@@ -1549,19 +1587,19 @@ const SAMPLE_DATA = [
   },
   {
     id: 'g-goal-h-1', project: 'haixi', type: 'goal-group',
-    title: '海汐小程序上线',
-    note: '8 月底内测，9 月公开',
+    title: '娴锋睈灏忕▼搴忎笂绾?,
+    note: '8 鏈堝簳鍐呮祴锛? 鏈堝叕寮€',
     subtasks: [
-      { id: 'st-h-1', title: '完成 UI 设计稿', done: true },
-      { id: 'st-h-2', title: '后端接口联调', done: true },
-      { id: 'st-h-3', title: '前端页面开发', done: false },
-      { id: 'st-h-4', title: '内部测试与上线发布', done: false }
+      { id: 'st-h-1', title: '瀹屾垚 UI 璁捐绋?, done: true },
+      { id: 'st-h-2', title: '鍚庣鎺ュ彛鑱旇皟', done: true },
+      { id: 'st-h-3', title: '鍓嶇椤甸潰寮€鍙?, done: false },
+      { id: 'st-h-4', title: '鍐呴儴娴嬭瘯涓庝笂绾垮彂甯?, done: false }
     ],
     done: false,
     createdAt: '2026-07-20T08:00:00.000Z'
   },
 
-  // ================== 个人生活 - 减重打卡 ==================
+  // ================== 涓汉鐢熸椿 - 鍑忛噸鎵撳崱 ==================
   {
     id: 'ws-p-1', project: 'personal', type: 'weight-settings',
     startWeight: 75.5,
@@ -1570,7 +1608,7 @@ const SAMPLE_DATA = [
   },
   {
     id: 'wr-p-1', project: 'personal', type: 'weight-record',
-    weight: 75.5, date: '2026-07-01', note: '起点',
+    weight: 75.5, date: '2026-07-01', note: '璧风偣',
     createdAt: '2026-07-01T08:00:00.000Z'
   },
   {
@@ -1596,7 +1634,7 @@ const SAMPLE_DATA = [
 ];
 
 // ============================================================
-// 工具
+// 宸ュ叿
 // ============================================================
 function uuid() {
   return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 9);
@@ -1625,7 +1663,7 @@ function escapeHtml(s) {
 function formatDisplayDate(str) {
   const d = parseDate(str);
   if (!d) return '';
-  return `${d.getMonth() + 1} 月 ${d.getDate()} 日`;
+  return `${d.getMonth() + 1} 鏈?${d.getDate()} 鏃;
 }
 function fmtDate(d) {
   if (!d) return '';
@@ -1646,7 +1684,7 @@ function ic(name, size) {
 }
 
 // ============================================================
-// 状态 + LocalStorage
+// 鐘舵€?+ LocalStorage
 // ============================================================
 let state = [];
 let currentProject = 'far-pump';
@@ -1655,22 +1693,146 @@ let calOffset = 0;
 let routineLogsOpen = {};
 try { routineLogsOpen = JSON.parse(localStorage.getItem('wb_routine_logs_open') || '{}'); } catch(e) { routineLogsOpen = {}; }
 
-function loadState() {
+// ============================================================
+// Supabase 瀹㈡埛绔垵濮嬪寲
+// ============================================================
+function initSupabase() {
+  try {
+    if (!window.supabase || !window.supabase.createClient) {
+      console.warn('Supabase SDK 鏈姞杞斤紝鍥為€€鍒?localStorage');
+      syncMode = 'offline';
+      return false;
+    }
+    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { persistSession: false }
+    });
+    syncMode = 'syncing';
+    updateSyncBadge();
+    return true;
+  } catch (e) {
+    console.error('Supabase 鍒濆鍖栧け璐?', e);
+    syncMode = 'offline';
+    updateSyncBadge();
+    return false;
+  }
+}
+
+async function loadState() {
+  // 1. 鍏堝皾璇?Supabase
+  if (supabase) {
+    try {
+      const { data, error } = await supabase
+        .from(SUPABASE_TABLE)
+        .select('data, updated_at')
+        .eq('id', SUPABASE_ROW_ID)
+        .maybeSingle();
+      if (!error && data && Array.isArray(data.data)) {
+        state = data.data;
+        syncMode = 'synced';
+        updateSyncBadge();
+        return;  // 浜戠鏈夋暟鎹紝鐩存帴鐢?      }
+      if (error && error.code !== 'PGRST116') {
+        console.warn('Supabase 璇诲彇澶辫触锛屽洖閫€ localStorage:', error);
+      }
+    } catch (e) {
+      console.warn('Supabase 杩炴帴寮傚父:', e);
+    }
+  }
+  // 2. 鍥為€€鍒?localStorage
   try {
     const raw = localStorage.getItem(LS_KEY);
     state = raw ? JSON.parse(raw) : [];
   } catch (e) {
-    console.error('加载数据失败', e);
+    console.error('鍔犺浇鏈湴鏁版嵁澶辫触', e);
     state = [];
   }
+  syncMode = supabase ? 'synced' : 'offline';
+  updateSyncBadge();
 }
-function saveState() {
+
+async function saveState() {
   try {
     localStorage.setItem(LS_KEY, JSON.stringify(state));
   } catch (e) {
-    console.error('保存失败', e);
-    alert('保存失败：' + e.message);
+    console.error('鏈湴淇濆瓨澶辫触:', e);
   }
+  // 涓婁紶浜戠
+  if (supabase && !suppressSave) {
+    try {
+      syncMode = 'syncing';
+      updateSyncBadge();
+      const { error } = await supabase
+        .from(SUPABASE_TABLE)
+        .upsert({
+          id: SUPABASE_ROW_ID,
+          data: state,
+          updated_at: new Date().toISOString()
+        }, { onConflict: 'id' });
+      if (error) {
+        console.warn('浜戠淇濆瓨澶辫触:', error);
+        syncMode = 'offline';
+      } else {
+        syncMode = 'synced';
+      }
+    } catch (e) {
+      console.warn('浜戠淇濆瓨寮傚父:', e);
+      syncMode = 'offline';
+    }
+    updateSyncBadge();
+  }
+}
+
+// ============================================================
+// 瀹炴椂鍚屾璁㈤槄
+// ============================================================
+function subscribeRealtime() {
+  if (!supabase) return;
+  realtimeChannel = supabase
+    .channel('wb-state-sync')
+    .on('postgres_changes',
+      { event: 'UPDATE', schema: 'public', table: SUPABASE_TABLE },
+      (payload) => {
+        if (payload.new && Array.isArray(payload.new.data)) {
+          // 闃叉鏈湴淇敼瑙﹀彂寰幆
+          if (JSON.stringify(payload.new.data) === JSON.stringify(state)) return;
+          suppressSave = true;
+          state = payload.new.data;
+          try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch(e) {}
+          renderAll();
+          showToast('宸蹭粠鍏朵粬璁惧鍚屾');
+          setTimeout(() => { suppressSave = false; }, 500);
+        }
+      }
+    )
+    .subscribe((status) => {
+      if (status === 'SUBSCRIBED') {
+        syncMode = 'synced';
+        updateSyncBadge();
+      }
+    });
+}
+
+// ============================================================
+// 鍚屾鐘舵€佸窘绔?// ============================================================
+function updateSyncBadge() {
+  const badge = document.getElementById('syncBadge');
+  if (!badge) return;
+  badge.classList.remove('synced', 'syncing', 'offline');
+  badge.classList.add(syncMode);
+  const text = {
+    synced: '宸插悓姝ヤ簯绔?,
+    syncing: '鍚屾涓?..',
+    offline: '浠呮湰鍦?
+  }[syncMode] || '鏈湴';
+  badge.innerHTML = `<span class="dot"></span>${text}`;
+}
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.textContent = msg;
+  t.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:var(--accent);color:white;padding:8px 16px;border-radius:8px;font-size:13px;z-index:9999;box-shadow:0 4px 12px rgba(0,0,0,0.2)';
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2500);
 }
 function migratePlans() {
   const today = todayStr();
@@ -1684,7 +1846,7 @@ function migratePlans() {
   if (changed) saveState();
 }
 function migrateRoutineExample() {
-  // 首次加载 v1.8.2 时，在远泵项目下追加"销售链接检查"循环示例 + 已转专项
+  // 棣栨鍔犺浇 v1.8.2 鏃讹紝鍦ㄨ繙娉甸」鐩笅杩藉姞"閿€鍞摼鎺ユ鏌?寰幆绀轰緥 + 宸茶浆涓撻」
   if (currentProject !== 'far-pump') return;
   const hasLogs = state.some(t => t.project === 'far-pump' && t.type === 'routine' && t.logs && t.logs.length > 0);
   if (hasLogs) return;
@@ -1703,8 +1865,7 @@ function setProject(p) {
   document.querySelectorAll('.project-tab').forEach(el => {
     el.classList.toggle('active', el.dataset.project === p);
   });
-  // 切换到 personal 时，自动追加新版预置减重数据（仅首次）
-  if (p === 'personal') {
+  // 鍒囨崲鍒?personal 鏃讹紝鑷姩杩藉姞鏂扮増棰勭疆鍑忛噸鏁版嵁锛堜粎棣栨锛?  if (p === 'personal') {
     const hasW = state.some(t => t.project === 'personal' && (t.type === 'weight-settings' || t.type === 'weight-record'));
     if (!hasW) {
       const samples = SAMPLE_DATA.filter(t => t.project === 'personal' && (t.type === 'weight-settings' || t.type === 'weight-record'));
@@ -1714,8 +1875,7 @@ function setProject(p) {
 }
 
 // ============================================================
-// 「今天要处理」聚合
-// ============================================================
+// 銆屼粖澶╄澶勭悊銆嶈仛鍚?// ============================================================
 function getTodayItems() {
   const today = todayStr();
   const todayDate = parseDate(today);
@@ -1725,20 +1885,20 @@ function getTodayItems() {
     if (t.type === 'special' && !t.done) {
       if (t.dueDate) {
         const diff = daysBetween(t.dueDate, today);
-        if (diff < 0) items.push({ t, status: 'overdue', label: `逾期 ${-diff} 天`, order: 0 });
-        else if (diff === 0) items.push({ t, status: 'today', label: '今日到期', order: 1 });
-        else if (diff <= 3) items.push({ t, status: 'soon', label: `${diff} 天后到期`, order: 2 });
+        if (diff < 0) items.push({ t, status: 'overdue', label: `閫炬湡 ${-diff} 澶ー, order: 0 });
+        else if (diff === 0) items.push({ t, status: 'today', label: '浠婃棩鍒版湡', order: 1 });
+        else if (diff <= 3) items.push({ t, status: 'soon', label: `${diff} 澶╁悗鍒版湡`, order: 2 });
       }
       if (t.scheduledDate === today && t.dueDate !== today) {
-        items.push({ t, status: 'scheduled', label: '今日排期', order: 3 });
+        items.push({ t, status: 'scheduled', label: '浠婃棩鎺掓湡', order: 3 });
       }
     }
     if (t.type === 'plan' && !t.done && t.date === today) {
-      items.push({ t, status: 'plan', label: '今日计划', order: 4 });
+      items.push({ t, status: 'plan', label: '浠婃棩璁″垝', order: 4 });
     }
     if (t.type === 'routine' && isRoutineActiveOn(t, todayDate)) {
       if (!t.history || !t.history[today]) {
-        items.push({ t, status: 'routine', label: '循环', order: 5 });
+        items.push({ t, status: 'routine', label: '寰幆', order: 5 });
       }
     }
   });
@@ -1746,21 +1906,21 @@ function getTodayItems() {
 }
 
 // ============================================================
-// 渲染：今天要处理
+// 娓叉煋锛氫粖澶╄澶勭悊
 // ============================================================
 function renderToday() {
   const items = getTodayItems();
   document.getElementById('todayBadge').textContent = items.length;
   const c = document.getElementById('todayContent');
   if (items.length === 0) {
-    c.innerHTML = '<div class="today-empty">✨ 今天一切清爽，去做点有意思的事吧</div>';
+    c.innerHTML = '<div class="today-empty">鉁?浠婂ぉ涓€鍒囨竻鐖斤紝鍘诲仛鐐规湁鎰忔€濈殑浜嬪惂</div>';
     return;
   }
   c.innerHTML = '<div class="today-list">' + items.map(({ t, status, label }) => `
     <div class="today-item ${status}">
       <span class="tag">${label}</span>
       <span class="text">${escapeHtml(t.title)}</span>
-      <button class="btn-done" onclick="completeToday('${t.id}')" title="标记完成">${ic('check', 12)}</button>
+      <button class="btn-done" onclick="completeToday('${t.id}')" title="鏍囪瀹屾垚">${ic('check', 12)}</button>
     </div>
   `).join('') + '</div>';
 }
@@ -1779,16 +1939,16 @@ window.completeToday = function(id) {
 };
 
 // ============================================================
-// 循环规则工具
+// 寰幆瑙勫垯宸ュ叿
 // ============================================================
 const RECUR_OPTIONS = [
-  { key: 'daily',   title: '每天', desc: '周一到周日每天都执行' },
-  { key: 'workday', title: '工作日', desc: '仅周一至周五（自动跳过周末）' },
-  { key: 'weekly',  title: '每周', desc: '自定义每周几执行（多选）' },
-  { key: 'monthly', title: '每月', desc: '每月固定某一天执行' },
-  { key: 'fixed',   title: '固定日期', desc: '指定具体某几天（如纪念日、缴费日）' }
+  { key: 'daily',   title: '姣忓ぉ', desc: '鍛ㄤ竴鍒板懆鏃ユ瘡澶╅兘鎵ц' },
+  { key: 'workday', title: '宸ヤ綔鏃?, desc: '浠呭懆涓€鑷冲懆浜旓紙鑷姩璺宠繃鍛ㄦ湯锛? },
+  { key: 'weekly',  title: '姣忓懆', desc: '鑷畾涔夋瘡鍛ㄥ嚑鎵ц锛堝閫夛級' },
+  { key: 'monthly', title: '姣忔湀', desc: '姣忔湀鍥哄畾鏌愪竴澶╂墽琛? },
+  { key: 'fixed',   title: '鍥哄畾鏃ユ湡', desc: '鎸囧畾鍏蜂綋鏌愬嚑澶╋紙濡傜邯蹇垫棩銆佺即璐规棩锛? }
 ];
-const WEEKDAY_NAMES = ['日', '一', '二', '三', '四', '五', '六'];
+const WEEKDAY_NAMES = ['鏃?, '涓€', '浜?, '涓?, '鍥?, '浜?, '鍏?];
 
 function isRoutineActiveOn(r, date) {
   if (!date) return true;
@@ -1807,20 +1967,20 @@ function isRoutineActiveOn(r, date) {
 function routineLabel(r) {
   const recurType = r.recurType || 'daily';
   switch (recurType) {
-    case 'daily': return '每天';
-    case 'workday': return '工作日';
+    case 'daily': return '姣忓ぉ';
+    case 'workday': return '宸ヤ綔鏃?;
     case 'weekly': {
-      if (!r.recurWeekDays || r.recurWeekDays.length === 0) return '每周（未设置）';
+      if (!r.recurWeekDays || r.recurWeekDays.length === 0) return '姣忓懆锛堟湭璁剧疆锛?;
       const sorted = [...r.recurWeekDays].sort();
-      return '每' + sorted.map(d => '周' + WEEKDAY_NAMES[d]).join('·');
+      return '姣? + sorted.map(d => '鍛? + WEEKDAY_NAMES[d]).join('路');
     }
-    case 'monthly': return `每月 ${r.recurMonthDay || 1} 日`;
+    case 'monthly': return `姣忔湀 ${r.recurMonthDay || 1} 鏃;
     case 'fixed': {
-      if (!r.recurFixedDates || r.recurFixedDates.length === 0) return '固定日期（未设置）';
+      if (!r.recurFixedDates || r.recurFixedDates.length === 0) return '鍥哄畾鏃ユ湡锛堟湭璁剧疆锛?;
       const list = r.recurFixedDates.slice(0, 2).map(s => s.slice(5)).join(', ');
-      return (r.recurFixedDates.length > 2 ? list + '...' : list) + '（共 ' + r.recurFixedDates.length + ' 天）';
+      return (r.recurFixedDates.length > 2 ? list + '...' : list) + '锛堝叡 ' + r.recurFixedDates.length + ' 澶╋級';
     }
-    default: return '每天';
+    default: return '姣忓ぉ';
   }
 }
 function routineNextDates(r, count) {
@@ -1835,8 +1995,7 @@ function routineNextDates(r, count) {
 }
 
 // ============================================================
-// 渲染：循环任务
-// ============================================================
+// 娓叉煋锛氬惊鐜换鍔?// ============================================================
 function renderRoutine() {
   const today = todayStr();
   const todayDate = parseDate(today);
@@ -1844,7 +2003,7 @@ function renderRoutine() {
     .sort((a, b) => (a.createdAt || '').localeCompare(b.createdAt || ''));
   const c = document.getElementById('routineList');
   if (list.length === 0) {
-    c.innerHTML = '<div class="empty">还没有循环任务，点击下方「添加循环任务」开始</div>';
+    c.innerHTML = '<div class="empty">杩樻病鏈夊惊鐜换鍔★紝鐐瑰嚮涓嬫柟銆屾坊鍔犲惊鐜换鍔°€嶅紑濮?/div>';
     return;
   }
   const activeList = list.filter(r => isRoutineActiveOn(r, todayDate));
@@ -1856,26 +2015,26 @@ function renderRoutine() {
     const label = routineLabel(r);
     let tagCls = 'routine-tag';
     let tagText = label;
-    if (!isActive) { tagCls += ' muted'; tagText = label + ' · 今日不出现'; }
+    if (!isActive) { tagCls += ' muted'; tagText = label + ' 路 浠婃棩涓嶅嚭鐜?; }
     const logs = r.logs || [];
     const isOpen = !!routineLogsOpen[r.id];
     const anomalyOpen = logs.filter(l => l.status === 'anomaly' && !l.convertedToId).length;
     const logsHtml = `
       <div class="routine-logs">
         <button type="button" class="routine-logs-toggle ${isOpen ? 'open' : ''}" onclick="toggleRoutineLogs('${r.id}')">
-          <span class="arrow">▶</span>
-          <span class="label">📋 检查记录 (${logs.length}${anomalyOpen ? ' · ' + anomalyOpen + ' 待处理' : ''})</span>
-          <span class="add-btn" onclick="event.stopPropagation(); openAddRoutineLogModal('${r.id}')">+ 记录</span>
+          <span class="arrow">鈻?/span>
+          <span class="label">馃搵 妫€鏌ヨ褰?(${logs.length}${anomalyOpen ? ' 路 ' + anomalyOpen + ' 寰呭鐞? : ''})</span>
+          <span class="add-btn" onclick="event.stopPropagation(); openAddRoutineLogModal('${r.id}')">+ 璁板綍</span>
         </button>
         <div class="routine-logs-list ${isOpen ? 'open' : ''}">
-          ${logs.length === 0 ? '<div class="muted tiny" style="padding:6px 4px">还没有检查记录，点「+ 记录」开始</div>' :
+          ${logs.length === 0 ? '<div class="muted tiny" style="padding:6px 4px">杩樻病鏈夋鏌ヨ褰曪紝鐐广€? 璁板綍銆嶅紑濮?/div>' :
             logs.map(l => {
               const converted = l.convertedToId;
-              let statusText = l.status === 'anomaly' ? '⚠ 异常' : '✓ 正常';
+              let statusText = l.status === 'anomaly' ? '鈿?寮傚父' : '鉁?姝ｅ父';
               let cls = 'routine-log ' + l.status;
-              if (converted) { cls += ' converted'; statusText = '已转专项'; }
+              if (converted) { cls += ' converted'; statusText = '宸茶浆涓撻」'; }
               const convertedTask = converted ? state.find(s => s.id === converted) : null;
-              const showMeta = l.date + (convertedTask ? ' → 已转：「' + escapeHtml(convertedTask.title.length > 25 ? convertedTask.title.slice(0, 25) + '...' : convertedTask.title) + '」' : '');
+              const showMeta = l.date + (convertedTask ? ' 鈫?宸茶浆锛氥€? + escapeHtml(convertedTask.title.length > 25 ? convertedTask.title.slice(0, 25) + '...' : convertedTask.title) + '銆? : '');
               return `
                 <div class="${cls}">
                   <span class="log-status">${statusText}</span>
@@ -1884,8 +2043,8 @@ function renderRoutine() {
                     <div class="log-meta">${escapeHtml(showMeta)}</div>
                   </div>
                   <div class="log-actions">
-                    ${l.status === 'anomaly' && !converted ? `<button class="convert" onclick="convertLogToSpecial('${r.id}','${l.id}')">转 To Do</button>` : ''}
-                    ${converted ? `<button class="view" onclick="document.getElementById('modSpecial').scrollIntoView({behavior:'smooth'})">查看</button>` : ''}
+                    ${l.status === 'anomaly' && !converted ? `<button class="convert" onclick="convertLogToSpecial('${r.id}','${l.id}')">杞?To Do</button>` : ''}
+                    ${converted ? `<button class="view" onclick="document.getElementById('modSpecial').scrollIntoView({behavior:'smooth'})">鏌ョ湅</button>` : ''}
                   </div>
                 </div>
               `;
@@ -1900,20 +2059,19 @@ function renderRoutine() {
         <div class="item-body">
           <div class="item-title"><span class="${tagCls}">${escapeHtml(tagText)}</span>${escapeHtml(r.title)}</div>
           ${r.note ? `<div class="item-note">${escapeHtml(r.note)}</div>` : ''}
-          ${recurType === 'fixed' && r.recurFixedDates ? `<div class="muted tiny" style="margin-top:4px">下次：${routineNextDates(r, 2).map(d => fmtDate(d).slice(5)).join('、')}</div>` : ''}
+          ${recurType === 'fixed' && r.recurFixedDates ? `<div class="muted tiny" style="margin-top:4px">涓嬫锛?{routineNextDates(r, 2).map(d => fmtDate(d).slice(5)).join('銆?)}</div>` : ''}
           ${logsHtml}
         </div>
         <div class="item-actions">
-          <button onclick="openRoutineModal('${r.id}')" title="编辑">${ic('edit', 14)}</button>
-          <button class="del" onclick="deleteTask('${r.id}')" title="删除">${ic('trash', 14)}</button>
+          <button onclick="openRoutineModal('${r.id}')" title="缂栬緫">${ic('edit', 14)}</button>
+          <button class="del" onclick="deleteTask('${r.id}')" title="鍒犻櫎">${ic('trash', 14)}</button>
         </div>
       </div>
     `;
   }).join('') + (activeList.length > 0 ? `
     <div style="margin-top:10px;padding:8px 12px;background:var(--accent-light);color:var(--accent);border-radius:8px;font-size:12px;font-weight:600;text-align:center;">
-      今日 ${doneToday} / ${activeList.length} 已打卡
-    </div>` : (list.length > 0 ? `
-    <div class="muted tiny" style="margin-top:10px;text-align:center;padding:8px">今天没有循环任务要打卡 ✨</div>` : ''));
+      浠婃棩 ${doneToday} / ${activeList.length} 宸叉墦鍗?    </div>` : (list.length > 0 ? `
+    <div class="muted tiny" style="margin-top:10px;text-align:center;padding:8px">浠婂ぉ娌℃湁寰幆浠诲姟瑕佹墦鍗?鉁?/div>` : ''));
 }
 window.toggleRoutine = function(id) {
   const r = state.find(x => x.id === id);
@@ -1936,31 +2094,30 @@ window.openAddRoutineLogModal = function(routineId) {
   window._addLogRoutineId = routineId;
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">📝 添加检查记录</h3>
+      <h3 class="modal-title">馃摑 娣诲姞妫€鏌ヨ褰?/h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>状态</label>
+      <label>鐘舵€?/label>
       <div class="priority-pills" id="logStatusPills">
-        <button type="button" class="priority-pill" data-status="normal" onclick="pickLogStatus(this)" style="color: var(--success); border-color: var(--success);">✓ 正常</button>
-        <button type="button" class="priority-pill" data-status="anomaly" onclick="pickLogStatus(this)" style="color: var(--danger); border-color: var(--danger);">⚠ 异常</button>
+        <button type="button" class="priority-pill" data-status="normal" onclick="pickLogStatus(this)" style="color: var(--success); border-color: var(--success);">鉁?姝ｅ父</button>
+        <button type="button" class="priority-pill" data-status="anomaly" onclick="pickLogStatus(this)" style="color: var(--danger); border-color: var(--danger);">鈿?寮傚父</button>
       </div>
     </div>
     <div class="field">
-      <label>检查日期</label>
+      <label>妫€鏌ユ棩鏈?/label>
       <input type="date" id="logDate" value="${todayStr()}">
     </div>
     <div class="field">
-      <label>检查内容</label>
-      <textarea id="logContent" rows="4" placeholder="例如：发现 XX 链接 404 / 全部正常无异常"></textarea>
+      <label>妫€鏌ュ唴瀹?/label>
+      <textarea id="logContent" rows="4" placeholder="渚嬪锛氬彂鐜?XX 閾炬帴 404 / 鍏ㄩ儴姝ｅ父鏃犲紓甯?></textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveRoutineLog()">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveRoutineLog()">淇濆瓨</button>
     </div>
   `);
-  // 默认选中第一个
-  setTimeout(() => {
+  // 榛樿閫変腑绗竴涓?  setTimeout(() => {
     const first = document.querySelector('#logStatusPills .priority-pill');
     if (first) { first.classList.add('active'); }
   }, 0);
@@ -1978,7 +2135,7 @@ window.saveRoutineLog = function() {
   const statusBtn = document.querySelector('#logStatusPills .priority-pill.active');
   const status = statusBtn ? statusBtn.dataset.status : 'normal';
   const content = document.getElementById('logContent').value.trim();
-  if (!content) return alert('请填写检查内容');
+  if (!content) return alert('璇峰～鍐欐鏌ュ唴瀹?);
   if (!r.logs) r.logs = [];
   r.logs.push({
     id: uuid(),
@@ -1998,7 +2155,7 @@ window.saveRoutineLog = function() {
 };
 
 window.deleteRoutineLog = function(routineId, logId) {
-  if (!confirm('删除这条检查记录？')) return;
+  if (!confirm('鍒犻櫎杩欐潯妫€鏌ヨ褰曪紵')) return;
   const r = state.find(x => x.id === routineId);
   if (r && r.logs) {
     r.logs = r.logs.filter(l => l.id !== logId);
@@ -2013,7 +2170,7 @@ window.convertLogToSpecial = function(routineId, logId) {
   const log = r.logs.find(l => l.id === logId);
   if (!log) return;
   if (log.convertedToId) {
-    alert('这条记录已经转为 To Do 了，去「专项待办」查看');
+    alert('杩欐潯璁板綍宸茬粡杞负 To Do 浜嗭紝鍘汇€屼笓椤瑰緟鍔炪€嶆煡鐪?);
     return;
   }
   const shortContent = log.content.length > 30 ? log.content.slice(0, 30) + '...' : log.content;
@@ -2021,8 +2178,8 @@ window.convertLogToSpecial = function(routineId, logId) {
     id: uuid(),
     project: r.project,
     type: 'special',
-    title: `【${r.title}】异常跟进 - ${shortContent}`,
-    note: `来源：循环任务「${r.title}」 ${log.date} 的检查记录\n\n异常详情：\n${log.content}`,
+    title: `銆?{r.title}銆戝紓甯歌窡杩?- ${shortContent}`,
+    note: `鏉ユ簮锛氬惊鐜换鍔°€?{r.title}銆?${log.date} 鐨勬鏌ヨ褰昞n\n寮傚父璇︽儏锛歕n${log.content}`,
     dueDate: todayStr(),
     scheduledDate: todayStr(),
     priority: 'P0',
@@ -2033,7 +2190,7 @@ window.convertLogToSpecial = function(routineId, logId) {
   log.convertedToId = newTask.id;
   saveState();
   renderAll();
-  alert('已转为 To Do · 跳到「专项待办」查看');
+  alert('宸茶浆涓?To Do 路 璺冲埌銆屼笓椤瑰緟鍔炪€嶆煡鐪?);
   setTimeout(() => {
     const el = document.getElementById('modSpecial');
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -2041,15 +2198,14 @@ window.convertLogToSpecial = function(routineId, logId) {
 };
 
 // ============================================================
-// 渲染：今日计划
-// ============================================================
+// 娓叉煋锛氫粖鏃ヨ鍒?// ============================================================
 function renderPlan() {
   const today = todayStr();
   const list = state.filter(t => t.project === currentProject && t.type === 'plan' && t.date === today)
     .sort((a, b) => (a.done ? 1 : 0) - (b.done ? 1 : 0));
   const c = document.getElementById('planList');
   if (list.length === 0) {
-    c.innerHTML = '<div class="empty">今天还没有计划，添加一些今天要做的事吧</div>';
+    c.innerHTML = '<div class="empty">浠婂ぉ杩樻病鏈夎鍒掞紝娣诲姞涓€浜涗粖澶╄鍋氱殑浜嬪惂</div>';
     return;
   }
   c.innerHTML = list.map(t => `
@@ -2060,8 +2216,8 @@ function renderPlan() {
         ${t.note ? `<div class="item-note">${escapeHtml(t.note)}</div>` : ''}
       </div>
       <div class="item-actions">
-        <button onclick="openPlanModal('${t.id}')" title="编辑">${ic('edit', 14)}</button>
-        <button class="del" onclick="deleteTask('${t.id}')" title="删除">${ic('trash', 14)}</button>
+        <button onclick="openPlanModal('${t.id}')" title="缂栬緫">${ic('edit', 14)}</button>
+        <button class="del" onclick="deleteTask('${t.id}')" title="鍒犻櫎">${ic('trash', 14)}</button>
       </div>
     </div>
   `).join('');
@@ -2076,8 +2232,7 @@ window.togglePlan = function(id) {
 };
 
 // ============================================================
-// 渲染：专项待办
-// ============================================================
+// 娓叉煋锛氫笓椤瑰緟鍔?// ============================================================
 function renderSpecial() {
   let list = state.filter(t => t.project === currentProject && t.type === 'special');
   if (doneCollapsed) list = list.filter(t => !t.done);
@@ -2091,7 +2246,7 @@ function renderSpecial() {
   });
   const c = document.getElementById('specialList');
   if (list.length === 0) {
-    c.innerHTML = `<div class="empty">${doneCollapsed ? '所有待办都搞定啦 ✨' : '还没有专项待办'}</div>`;
+    c.innerHTML = `<div class="empty">${doneCollapsed ? '鎵€鏈夊緟鍔為兘鎼炲畾鍟?鉁? : '杩樻病鏈変笓椤瑰緟鍔?}</div>`;
     return;
   }
   c.innerHTML = list.map(t => {
@@ -2103,19 +2258,19 @@ function renderSpecial() {
       const diff = daysBetween(t.dueDate, today);
       if (diff < 0) {
         itemCls += ' overdue';
-        duePill = `<span class="pill due-overdue">⚠ 已逾期 ${-diff} 天 · ${formatDisplayDate(t.dueDate)}</span>`;
+        duePill = `<span class="pill due-overdue">鈿?宸查€炬湡 ${-diff} 澶?路 ${formatDisplayDate(t.dueDate)}</span>`;
       } else if (diff === 0) {
         itemCls += ' today-due';
-        duePill = `<span class="pill due-today">今天到期 · ${formatDisplayDate(t.dueDate)}</span>`;
+        duePill = `<span class="pill due-today">浠婂ぉ鍒版湡 路 ${formatDisplayDate(t.dueDate)}</span>`;
       } else if (diff <= 3) {
         itemCls += ' soon-due';
-        duePill = `<span class="pill due-soon">${diff} 天后 · ${formatDisplayDate(t.dueDate)}</span>`;
+        duePill = `<span class="pill due-soon">${diff} 澶╁悗 路 ${formatDisplayDate(t.dueDate)}</span>`;
       } else {
         duePill = `<span class="pill due-future">${formatDisplayDate(t.dueDate)}</span>`;
       }
     }
-    const priPill = `<span class="pill priority-${t.priority}">${t.priority} · ${PRIORITY_LABEL[t.priority].text}</span>`;
-    const schedPill = t.scheduledDate ? `<span class="pill scheduled">📅 ${formatDisplayDate(t.scheduledDate)}</span>` : '';
+    const priPill = `<span class="pill priority-${t.priority}">${t.priority} 路 ${PRIORITY_LABEL[t.priority].text}</span>`;
+    const schedPill = t.scheduledDate ? `<span class="pill scheduled">馃搮 ${formatDisplayDate(t.scheduledDate)}</span>` : '';
     return `
       <div class="${itemCls}">
         <div class="item-check ${t.done ? 'done' : ''}" onclick="toggleSpecial('${t.id}')"></div>
@@ -2125,14 +2280,14 @@ function renderSpecial() {
           ${t.note ? `<div class="item-note">${escapeHtml(t.note)}</div>` : ''}
         </div>
         <div class="item-actions">
-          <button onclick="openScheduleModal('${t.id}')" title="排期到日历">${ic('cal', 14)}</button>
-          <button onclick="openSpecialModal('${t.id}')" title="编辑">${ic('edit', 14)}</button>
-          <button class="del" onclick="deleteTask('${t.id}')" title="删除">${ic('trash', 14)}</button>
+          <button onclick="openScheduleModal('${t.id}')" title="鎺掓湡鍒版棩鍘?>${ic('cal', 14)}</button>
+          <button onclick="openSpecialModal('${t.id}')" title="缂栬緫">${ic('edit', 14)}</button>
+          <button class="del" onclick="deleteTask('${t.id}')" title="鍒犻櫎">${ic('trash', 14)}</button>
         </div>
       </div>
     `;
   }).join('');
-  document.getElementById('toggleDoneLabel').textContent = doneCollapsed ? '显示已完成' : '折叠已完成';
+  document.getElementById('toggleDoneLabel').textContent = doneCollapsed ? '鏄剧ず宸插畬鎴? : '鎶樺彔宸插畬鎴?;
 }
 window.toggleSpecial = function(id) {
   const t = state.find(x => x.id === id);
@@ -2144,52 +2299,51 @@ window.toggleSpecial = function(id) {
   renderAll();
 };
 window.deleteTask = function(id) {
-  if (!confirm('确定要删除这条任务吗？')) return;
+  if (!confirm('纭畾瑕佸垹闄よ繖鏉′换鍔″悧锛?)) return;
   state = state.filter(t => t.id !== id);
   saveState();
   renderAll();
 };
 
 // ============================================================
-// 弹窗：专项待办编辑
-// ============================================================
+// 寮圭獥锛氫笓椤瑰緟鍔炵紪杈?// ============================================================
 function openSpecialModal(editId) {
   const t = editId ? state.find(x => x.id === editId) : { title: '', dueDate: todayStr(), priority: 'P1', note: '', scheduledDate: '' };
   if (!t) return;
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">${editId ? '编辑' : '添加'}专项待办</h3>
+      <h3 class="modal-title">${editId ? '缂栬緫' : '娣诲姞'}涓撻」寰呭姙</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>标题</label>
-      <input type="text" id="spTitle" value="${escapeHtml(t.title || '')}" placeholder="例如：联系客户确认订单">
+      <label>鏍囬</label>
+      <input type="text" id="spTitle" value="${escapeHtml(t.title || '')}" placeholder="渚嬪锛氳仈绯诲鎴风‘璁よ鍗?>
     </div>
     <div class="field">
-      <label>优先级</label>
+      <label>浼樺厛绾?/label>
       <div class="priority-pills">
-        <button type="button" class="priority-pill ${t.priority==='P0'?'active':''}" data-prio="P0" onclick="pickPriority(this)">P0 紧急</button>
-        <button type="button" class="priority-pill ${t.priority==='P1'?'active':''}" data-prio="P1" onclick="pickPriority(this)">P1 重要</button>
-        <button type="button" class="priority-pill ${t.priority==='P2'?'active':''}" data-prio="P2" onclick="pickPriority(this)">P2 普通</button>
+        <button type="button" class="priority-pill ${t.priority==='P0'?'active':''}" data-prio="P0" onclick="pickPriority(this)">P0 绱ф€?/button>
+        <button type="button" class="priority-pill ${t.priority==='P1'?'active':''}" data-prio="P1" onclick="pickPriority(this)">P1 閲嶈</button>
+        <button type="button" class="priority-pill ${t.priority==='P2'?'active':''}" data-prio="P2" onclick="pickPriority(this)">P2 鏅€?/button>
       </div>
     </div>
     <div class="field-row">
       <div class="field">
-        <label>截止日期</label>
+        <label>鎴鏃ユ湡</label>
         <input type="date" id="spDue" value="${t.dueDate || ''}">
       </div>
       <div class="field">
-        <label>排期日（可选）</label>
+        <label>鎺掓湡鏃ワ紙鍙€夛級</label>
         <input type="date" id="spSched" value="${t.scheduledDate || ''}">
       </div>
     </div>
     <div class="field">
-      <label>备注</label>
-      <textarea id="spNote" placeholder="补充细节、链接等">${escapeHtml(t.note || '')}</textarea>
+      <label>澶囨敞</label>
+      <textarea id="spNote" placeholder="琛ュ厖缁嗚妭銆侀摼鎺ョ瓑">${escapeHtml(t.note || '')}</textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveSpecial('${t.id || ''}')">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveSpecial('${t.id || ''}')">淇濆瓨</button>
     </div>
   `);
 }
@@ -2199,7 +2353,7 @@ window.pickPriority = function(btn) {
 };
 window.saveSpecial = function(id) {
   const title = document.getElementById('spTitle').value.trim();
-  if (!title) return alert('请填写标题');
+  if (!title) return alert('璇峰～鍐欐爣棰?);
   const prio = document.querySelector('.priority-pill.active');
   const data = {
     project: currentProject,
@@ -2225,31 +2379,31 @@ window.saveSpecial = function(id) {
 };
 
 // ============================================================
-// 弹窗：排期到日历
+// 寮圭獥锛氭帓鏈熷埌鏃ュ巻
 // ============================================================
 function openScheduleModal(id) {
   const t = state.find(x => x.id === id);
   if (!t) return;
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">📅 排期到日历</h3>
+      <h3 class="modal-title">馃搮 鎺掓湡鍒版棩鍘?/h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
-    <p style="margin:0 0 14px 0;font-size:13px;color:var(--text-light);">任务：<strong style="color:var(--text)">${escapeHtml(t.title)}</strong></p>
+    <p style="margin:0 0 14px 0;font-size:13px;color:var(--text-light);">浠诲姟锛?strong style="color:var(--text)">${escapeHtml(t.title)}</strong></p>
     <div class="field">
-      <label>选择日期</label>
+      <label>閫夋嫨鏃ユ湡</label>
       <input type="date" id="scheduleDate" value="${t.scheduledDate || todayStr()}">
     </div>
-    ${t.scheduledDate ? `<button class="btn btn-secondary" style="margin-bottom:10px" onclick="clearSchedule('${t.id}')">清除排期</button>` : ''}
+    ${t.scheduledDate ? `<button class="btn btn-secondary" style="margin-bottom:10px" onclick="clearSchedule('${t.id}')">娓呴櫎鎺掓湡</button>` : ''}
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="confirmSchedule('${t.id}')">确认排期</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="confirmSchedule('${t.id}')">纭鎺掓湡</button>
     </div>
   `);
 }
 window.confirmSchedule = function(id) {
   const date = document.getElementById('scheduleDate').value;
-  if (!date) return alert('请选择日期');
+  if (!date) return alert('璇烽€夋嫨鏃ユ湡');
   const t = state.find(x => x.id === id);
   if (!t) return;
   t.scheduledDate = date;
@@ -2267,8 +2421,7 @@ window.clearSchedule = function(id) {
 };
 
 // ============================================================
-// 渲染：本月目标
-// ============================================================
+// 娓叉煋锛氭湰鏈堢洰鏍?// ============================================================
 function renderGoals() {
   renderIndep();
   renderGroup();
@@ -2277,7 +2430,7 @@ function renderIndep() {
   const list = state.filter(t => t.project === currentProject && t.type === 'goal-indep');
   const c = document.getElementById('indepList');
   if (list.length === 0) {
-    c.innerHTML = '<div class="empty">还没有独立目标，点击右上角「新增」开始追踪</div>';
+    c.innerHTML = '<div class="empty">杩樻病鏈夌嫭绔嬬洰鏍囷紝鐐瑰嚮鍙充笂瑙掋€屾柊澧炪€嶅紑濮嬭拷韪?/div>';
     return;
   }
   c.innerHTML = list.map(t => `
@@ -2292,15 +2445,15 @@ function renderIndep() {
         ${t.note ? `<div class="item-note">${escapeHtml(t.note)}</div>` : ''}
       </div>
       <div class="item-actions">
-        <button onclick="openGoalIndepModal('${t.id}')" title="编辑">${ic('edit', 14)}</button>
-        <button class="del" onclick="deleteTask('${t.id}')" title="删除">${ic('trash', 14)}</button>
+        <button onclick="openGoalIndepModal('${t.id}')" title="缂栬緫">${ic('edit', 14)}</button>
+        <button class="del" onclick="deleteTask('${t.id}')" title="鍒犻櫎">${ic('trash', 14)}</button>
       </div>
     </div>
   `).join('');
 }
 
 window.onProgressSlide = function(id, val, el) {
-  // 拖动时仅更新显示
+  // 鎷栧姩鏃朵粎鏇存柊鏄剧ず
   el.parentElement.querySelector('.progress-percent').textContent = val + '%';
 };
 
@@ -2333,7 +2486,7 @@ function renderGroup() {
   const list = state.filter(t => t.project === currentProject && t.type === 'goal-group');
   const c = document.getElementById('groupList');
   if (list.length === 0) {
-    c.innerHTML = '<div class="empty">还没有拆解目标，点击右上角「新增」开启</div>';
+    c.innerHTML = '<div class="empty">杩樻病鏈夋媶瑙ｇ洰鏍囷紝鐐瑰嚮鍙充笂瑙掋€屾柊澧炪€嶅紑鍚?/div>';
     return;
   }
   c.innerHTML = list.map(t => {
@@ -2343,7 +2496,7 @@ function renderGroup() {
     return `
       <div class="item">
         <div class="item-body">
-          <div class="item-title">${escapeHtml(t.title)} ${percent >= 100 ? '✅' : ''}</div>
+          <div class="item-title">${escapeHtml(t.title)} ${percent >= 100 ? '鉁? : ''}</div>
           <div class="goal-group-progress">
             <div class="progress-bar"><div class="progress-fill ${percent>=100?'done':''}" style="width:${percent}%"></div></div>
             <span class="progress-percent">${percent}%</span>
@@ -2354,18 +2507,18 @@ function renderGroup() {
               <div class="subtask ${s.done ? 'done' : ''}">
                 <div class="item-check ${s.done ? 'done' : ''}" onclick="toggleSubtask('${t.id}', ${i})"></div>
                 <span class="subtask-text">${escapeHtml(s.title)}</span>
-                <button class="del-mini" onclick="deleteSubtask('${t.id}', ${i})" title="删除">×</button>
+                <button class="del-mini" onclick="deleteSubtask('${t.id}', ${i})" title="鍒犻櫎">脳</button>
               </div>
             `).join('')}
             <div class="subtask-add">
-              <input type="text" placeholder="添加子任务..." onkeydown="if(event.key==='Enter'){this.nextElementSibling.click()}">
-              <button onclick="addSubtask('${t.id}', this.previousElementSibling.value); this.previousElementSibling.value='';">添加</button>
+              <input type="text" placeholder="娣诲姞瀛愪换鍔?.." onkeydown="if(event.key==='Enter'){this.nextElementSibling.click()}">
+              <button onclick="addSubtask('${t.id}', this.previousElementSibling.value); this.previousElementSibling.value='';">娣诲姞</button>
             </div>
           </div>
         </div>
         <div class="item-actions">
-          <button onclick="openGoalGroupModal('${t.id}')" title="编辑">${ic('edit', 14)}</button>
-          <button class="del" onclick="deleteTask('${t.id}')" title="删除">${ic('trash', 14)}</button>
+          <button onclick="openGoalGroupModal('${t.id}')" title="缂栬緫">${ic('edit', 14)}</button>
+          <button class="del" onclick="deleteTask('${t.id}')" title="鍒犻櫎">${ic('trash', 14)}</button>
         </div>
       </div>
     `;
@@ -2394,7 +2547,7 @@ window.addSubtask = function(id, title) {
 window.deleteSubtask = function(id, idx) {
   const t = state.find(x => x.id === id);
   if (!t) return;
-  if (!confirm('删除子任务「' + t.subtasks[idx].title + '」？')) return;
+  if (!confirm('鍒犻櫎瀛愪换鍔°€? + t.subtasks[idx].title + '銆嶏紵')) return;
   t.subtasks.splice(idx, 1);
   saveState();
   renderAll();
@@ -2404,30 +2557,30 @@ function openGoalIndepModal(editId) {
   const t = editId ? state.find(x => x.id === editId) : { title: '', progress: 0, note: '' };
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">${editId ? '编辑' : '新增'}独立目标</h3>
+      <h3 class="modal-title">${editId ? '缂栬緫' : '鏂板'}鐙珛鐩爣</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>目标名</label>
-      <input type="text" id="goalTitle" value="${escapeHtml(t.title || '')}" placeholder="例如：Q3 销售指标">
+      <label>鐩爣鍚?/label>
+      <input type="text" id="goalTitle" value="${escapeHtml(t.title || '')}" placeholder="渚嬪锛歈3 閿€鍞寚鏍?>
     </div>
     <div class="field">
-      <label>初始进度：<span id="goalProgVal">${t.progress || 0}</span>%</label>
+      <label>鍒濆杩涘害锛?span id="goalProgVal">${t.progress || 0}</span>%</label>
       <input type="range" min="0" max="100" value="${t.progress || 0}" oninput="document.getElementById('goalProgVal').textContent = this.value">
     </div>
     <div class="field">
-      <label>备注</label>
-      <textarea id="goalNote" placeholder="补充说明">${escapeHtml(t.note || '')}</textarea>
+      <label>澶囨敞</label>
+      <textarea id="goalNote" placeholder="琛ュ厖璇存槑">${escapeHtml(t.note || '')}</textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveGoalIndep('${t.id || ''}')">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveGoalIndep('${t.id || ''}')">淇濆瓨</button>
     </div>
   `);
 }
 window.saveGoalIndep = function(id) {
   const title = document.getElementById('goalTitle').value.trim();
-  if (!title) return alert('请填写目标名');
+  if (!title) return alert('璇峰～鍐欑洰鏍囧悕');
   const data = {
     project: currentProject,
     type: 'goal-indep',
@@ -2453,30 +2606,30 @@ function openGoalGroupModal(editId) {
   const t = editId ? state.find(x => x.id === editId) : { title: '', note: '', subtasks: [] };
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">${editId ? '编辑' : '新增'}拆解目标</h3>
+      <h3 class="modal-title">${editId ? '缂栬緫' : '鏂板'}鎷嗚В鐩爣</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>总目标</label>
-      <input type="text" id="groupTitle" value="${escapeHtml(t.title || '')}" placeholder="例如：完成海汐小程序上线">
+      <label>鎬荤洰鏍?/label>
+      <input type="text" id="groupTitle" value="${escapeHtml(t.title || '')}" placeholder="渚嬪锛氬畬鎴愭捣姹愬皬绋嬪簭涓婄嚎">
     </div>
     <div class="field">
-      <label>说明</label>
+      <label>璇存槑</label>
       <textarea id="groupNote">${escapeHtml(t.note || '')}</textarea>
     </div>
     <div class="field">
-      <label>子任务（每行一个，已有完成状态会被保留）</label>
-      <textarea id="groupSubtasks" rows="6" placeholder="例如：&#10;完成 UI 设计&#10;后端接口开发&#10;测试上线">${(t.subtasks || []).map(s => s.title).join('\n')}</textarea>
+      <label>瀛愪换鍔★紙姣忚涓€涓紝宸叉湁瀹屾垚鐘舵€佷細琚繚鐣欙級</label>
+      <textarea id="groupSubtasks" rows="6" placeholder="渚嬪锛?#10;瀹屾垚 UI 璁捐&#10;鍚庣鎺ュ彛寮€鍙?#10;娴嬭瘯涓婄嚎">${(t.subtasks || []).map(s => s.title).join('\n')}</textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveGoalGroup('${t.id || ''}')">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveGoalGroup('${t.id || ''}')">淇濆瓨</button>
     </div>
   `);
 }
 window.saveGoalGroup = function(id) {
   const title = document.getElementById('groupTitle').value.trim();
-  if (!title) return alert('请填写总目标');
+  if (!title) return alert('璇峰～鍐欐€荤洰鏍?);
   const lines = document.getElementById('groupSubtasks').value.split('\n').map(s => s.trim()).filter(Boolean);
   if (id) {
     const old = state.find(x => x.id === id);
@@ -2504,7 +2657,7 @@ window.saveGoalGroup = function(id) {
 };
 
 // ============================================================
-// 渲染：日程表
+// 娓叉煋锛氭棩绋嬭〃
 // ============================================================
 function renderCalendar() {
   const today = todayStr();
@@ -2512,7 +2665,7 @@ function renderCalendar() {
   const target = new Date(base.getFullYear(), base.getMonth() + calOffset, 1);
   const year = target.getFullYear();
   const month = target.getMonth();
-  document.getElementById('calTitle').textContent = `${year} 年 ${month + 1} 月`;
+  document.getElementById('calTitle').textContent = `${year} 骞?${month + 1} 鏈坄;
   const firstDay = new Date(year, month, 1);
   const firstWeekday = firstDay.getDay();
   const lastDay = new Date(year, month + 1, 0).getDate();
@@ -2585,16 +2738,16 @@ window.openDayModal = function(dateStr) {
   });
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">📅 ${formatDisplayDate(dateStr)}</h3>
+      <h3 class="modal-title">馃搮 ${formatDisplayDate(dateStr)}</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="day-task-list">
-      ${tasks.length === 0 ? '<div class="empty">这天还没有安排任务</div>' :
+      ${tasks.length === 0 ? '<div class="empty">杩欏ぉ杩樻病鏈夊畨鎺掍换鍔?/div>' :
         tasks.map(t => {
           if (t.type === 'special') {
             const isDue = t.dueDate === dateStr;
             const pillCls = isDue ? (t.dueDate < todayStr() ? 'due-overdue' : 'due-today') : 'scheduled';
-            const label = isDue ? (t.dueDate < todayStr() ? '⚠ 截止' : '今天到期') : '已排期';
+            const label = isDue ? (t.dueDate < todayStr() ? '鈿?鎴' : '浠婂ぉ鍒版湡') : '宸叉帓鏈?;
             return `
               <div class="item">
                 <div class="item-check" onclick="toggleSpecial('${t.id}');closeModal();openDayModal('${dateStr}');"></div>
@@ -2613,7 +2766,7 @@ window.openDayModal = function(dateStr) {
                 <div class="item-check" onclick="togglePlan('${t.id}');closeModal();openDayModal('${dateStr}');"></div>
                 <div class="item-body">
                   <div class="item-title">${escapeHtml(t.title)}</div>
-                  <div class="item-meta"><span class="pill">今日计划</span></div>
+                  <div class="item-meta"><span class="pill">浠婃棩璁″垝</span></div>
                 </div>
               </div>
             `;
@@ -2622,13 +2775,13 @@ window.openDayModal = function(dateStr) {
       }
     </div>
     <div class="modal-actions" style="margin-top:14px">
-      <button class="btn btn-secondary btn-block" onclick="closeModal()">关闭</button>
+      <button class="btn btn-secondary btn-block" onclick="closeModal()">鍏抽棴</button>
     </div>
   `);
 };
 
 // ============================================================
-// 弹窗：循环任务 / 今日计划
+// 寮圭獥锛氬惊鐜换鍔?/ 浠婃棩璁″垝
 // ============================================================
 function openRoutineModal(editId) {
   const r = editId ? state.find(x => x.id === editId) : null;
@@ -2639,19 +2792,19 @@ function openRoutineModal(editId) {
 
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">${editId ? '编辑' : '添加'}循环任务</h3>
+      <h3 class="modal-title">${editId ? '缂栬緫' : '娣诲姞'}寰幆浠诲姟</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>任务名</label>
-      <input type="text" id="routineTitle" value="${escapeHtml(r ? r.title : '')}" placeholder="例如：每天 30 分钟阅读">
+      <label>浠诲姟鍚?/label>
+      <input type="text" id="routineTitle" value="${escapeHtml(r ? r.title : '')}" placeholder="渚嬪锛氭瘡澶?30 鍒嗛挓闃呰">
     </div>
     <div class="field">
-      <label>备注（可选）</label>
+      <label>澶囨敞锛堝彲閫夛級</label>
       <textarea id="routineNote">${escapeHtml(r ? (r.note || '') : '')}</textarea>
     </div>
     <div class="field">
-      <label>循环方式</label>
+      <label>寰幆鏂瑰紡</label>
       <div class="recur-options" id="recurOptions">
         ${RECUR_OPTIONS.map(o => `
           <button type="button" class="recur-option ${o.key === recurType ? 'active' : ''}" data-key="${o.key}" onclick="pickRecurType(this)">
@@ -2666,11 +2819,11 @@ function openRoutineModal(editId) {
       <div id="recurDetail"></div>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveRoutine('${editId || ''}')">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveRoutine('${editId || ''}')">淇濆瓨</button>
     </div>
   `);
-  // 渲染默认 detail
+  // 娓叉煋榛樿 detail
   window._recurState = { recurType, recurWeekDays: [...recurWeekDays], recurMonthDay, recurFixedDates: [...recurFixedDates] };
   renderRecurDetail();
 }
@@ -2726,7 +2879,7 @@ function renderRecurDetail() {
   if (st.recurType === 'weekly') {
     html = `
       <div class="recur-detail">
-        <div class="recur-detail-label">选择每周几</div>
+        <div class="recur-detail-label">閫夋嫨姣忓懆鍑?/div>
         <div class="weekday-pills">
           ${[0,1,2,3,4,5,6].map(d => `
             <button type="button" class="weekday-pill ${st.recurWeekDays.includes(d) ? 'active' : ''}" onclick="toggleWeekday(${d})">${WEEKDAY_NAMES[d]}</button>
@@ -2737,26 +2890,26 @@ function renderRecurDetail() {
   } else if (st.recurType === 'monthly') {
     html = `
       <div class="recur-detail">
-        <div class="recur-detail-label">每月哪一天</div>
+        <div class="recur-detail-label">姣忔湀鍝竴澶?/div>
         <div class="recur-month-row">
           <input type="number" id="monthDay" min="1" max="31" value="${st.recurMonthDay}" oninput="changeMonthDay(this.value)">
-          <span class="muted">日（1-31）</span>
+          <span class="muted">鏃ワ紙1-31锛?/span>
         </div>
       </div>
     `;
   } else if (st.recurType === 'fixed') {
     html = `
       <div class="recur-detail">
-        <div class="recur-detail-label">指定日期（按月日）</div>
+        <div class="recur-detail-label">鎸囧畾鏃ユ湡锛堟寜鏈堟棩锛?/div>
         <div class="fixed-date-list">
           ${st.recurFixedDates.map((d, i) => `
             <div class="fixed-date-row">
               <input type="date" value="${d}" onchange="changeFixedDate(${i}, this.value)">
-              <button class="del" onclick="delFixedDate(${i})" title="删除">${ic('close', 14)}</button>
+              <button class="del" onclick="delFixedDate(${i})" title="鍒犻櫎">${ic('close', 14)}</button>
             </div>
           `).join('')}
           <div class="fixed-date-row">
-            <button class="add" onclick="addFixedDate()">+ 添加日期</button>
+            <button class="add" onclick="addFixedDate()">+ 娣诲姞鏃ユ湡</button>
           </div>
         </div>
       </div>
@@ -2767,7 +2920,7 @@ function renderRecurDetail() {
 
 window.saveRoutine = function(editId) {
   const title = document.getElementById('routineTitle').value.trim();
-  if (!title) return alert('请填写任务名');
+  if (!title) return alert('璇峰～鍐欎换鍔″悕');
   const st = window._recurState || { recurType: 'daily', recurWeekDays: [1,3,5], recurMonthDay: 1, recurFixedDates: [] };
   const data = {
     project: currentProject,
@@ -2803,26 +2956,26 @@ function openPlanModal(editId) {
   if (editId && !t) return;
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">${editId ? '编辑今日计划' : '添加今日计划'}</h3>
+      <h3 class="modal-title">${editId ? '缂栬緫浠婃棩璁″垝' : '娣诲姞浠婃棩璁″垝'}</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field">
-      <label>任务名</label>
-      <input type="text" id="planTitle" value="${escapeHtml(t ? t.title : '')}" placeholder="例如：买菜做饭">
+      <label>浠诲姟鍚?/label>
+      <input type="text" id="planTitle" value="${escapeHtml(t ? t.title : '')}" placeholder="渚嬪锛氫拱鑿滃仛楗?>
     </div>
     <div class="field">
-      <label>备注（可选）</label>
+      <label>澶囨敞锛堝彲閫夛級</label>
       <textarea id="planNote">${escapeHtml(t ? (t.note || '') : '')}</textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="savePlan('${editId || ''}')">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="savePlan('${editId || ''}')">淇濆瓨</button>
     </div>
   `);
 }
 window.savePlan = function(id) {
   const title = document.getElementById('planTitle').value.trim();
-  if (!title) return alert('请填写任务名');
+  if (!title) return alert('璇峰～鍐欎换鍔″悕');
   if (id) {
     const t = state.find(x => x.id === id);
     t.title = title;
@@ -2845,7 +2998,7 @@ window.savePlan = function(id) {
 };
 
 // ============================================================
-// 弹窗基础
+// 寮圭獥鍩虹
 // ============================================================
 function showModal(html) {
   const root = document.getElementById('modalRoot');
@@ -2862,13 +3015,13 @@ window.closeModal = function() {
 };
 
 // ============================================================
-// 顶部 + 备份提示
+// 椤堕儴 + 澶囦唤鎻愮ず
 // ============================================================
 function renderHeader() {
   const d = new Date();
-  const weeks = ['日', '一', '二', '三', '四', '五', '六'];
+  const weeks = ['鏃?, '涓€', '浜?, '涓?, '鍥?, '浜?, '鍏?];
   document.getElementById('topDate').textContent =
-    `${d.getFullYear()} 年 ${d.getMonth() + 1} 月 ${d.getDate()} 日 · 周${weeks[d.getDay()]}`;
+    `${d.getFullYear()} 骞?${d.getMonth() + 1} 鏈?${d.getDate()} 鏃?路 鍛?{weeks[d.getDay()]}`;
   const tip = document.getElementById('backupTip');
   const total = state.length;
   if (total >= 30) {
@@ -2880,7 +3033,7 @@ function renderHeader() {
 }
 
 // ============================================================
-// 数据导出 / 导入 / 清空
+// 鏁版嵁瀵煎嚭 / 瀵煎叆 / 娓呯┖
 // ============================================================
 function exportJSON() {
   const data = {
@@ -2892,7 +3045,7 @@ function exportJSON() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `我的工作台-备份-${todayStr()}.json`;
+  a.download = `鎴戠殑宸ヤ綔鍙?澶囦唤-${todayStr()}.json`;
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
@@ -2902,29 +3055,29 @@ window.handleImportFile = function(file) {
     try {
       const parsed = JSON.parse(e.target.result);
       const items = Array.isArray(parsed) ? parsed : (parsed.items || []);
-      if (!Array.isArray(items)) throw new Error('数据格式不正确');
-      if (state.length > 0 && !confirm(`即将导入 ${items.length} 条数据，将覆盖现有 ${state.length} 条数据。继续？`)) return;
+      if (!Array.isArray(items)) throw new Error('鏁版嵁鏍煎紡涓嶆纭?);
+      if (state.length > 0 && !confirm(`鍗冲皢瀵煎叆 ${items.length} 鏉℃暟鎹紝灏嗚鐩栫幇鏈?${state.length} 鏉℃暟鎹€傜户缁紵`)) return;
       state = items;
       saveState();
       renderAll();
-      alert('导入成功！');
+      alert('瀵煎叆鎴愬姛锛?);
     } catch (err) {
-      alert('导入失败：' + err.message);
+      alert('瀵煎叆澶辫触锛? + err.message);
     }
   };
   reader.readAsText(file);
 };
 function clearAll() {
-  if (!confirm('⚠️ 确定要清空所有数据吗？所有项目下的任务都会被删除。')) return;
-  if (!confirm('再次确认：清空后不可恢复，是否继续？')) return;
+  if (!confirm('鈿狅笍 纭畾瑕佹竻绌烘墍鏈夋暟鎹悧锛熸墍鏈夐」鐩笅鐨勪换鍔￠兘浼氳鍒犻櫎銆?)) return;
+  if (!confirm('鍐嶆纭锛氭竻绌哄悗涓嶅彲鎭㈠锛屾槸鍚︾户缁紵')) return;
   state = [];
   saveState();
   renderAll();
-  alert('已清空。下次打开会重新预置示例数据。');
+  alert('宸叉竻绌恒€備笅娆℃墦寮€浼氶噸鏂伴缃ず渚嬫暟鎹€?);
 }
 
 // ============================================================
-// 事件绑定
+// 浜嬩欢缁戝畾
 // ============================================================
 function bindEvents() {
   document.querySelectorAll('.project-tab').forEach(tab => {
@@ -2973,8 +3126,7 @@ function bindEvents() {
   document.getElementById('btnWeightAdd').addEventListener('click', openWeightAddModal);
   document.getElementById('btnWeightImport').addEventListener('click', openWeightImportModal);
 
-  // 进度条松手时统一保存 + 重渲染
-  document.addEventListener('change', e => {
+  // 杩涘害鏉℃澗鎵嬫椂缁熶竴淇濆瓨 + 閲嶆覆鏌?  document.addEventListener('change', e => {
     if (e.target.matches && e.target.matches('#indepList input[type=range]')) {
       renderAll();
     }
@@ -2982,7 +3134,7 @@ function bindEvents() {
 }
 
 // ============================================================
-// 全部渲染
+// 鍏ㄩ儴娓叉煋
 // ============================================================
 function renderAll() {
   renderHeader();
@@ -2996,8 +3148,7 @@ function renderAll() {
 }
 
 // ============================================================
-// 渲染：减重打卡
-// ============================================================
+// 娓叉煋锛氬噺閲嶆墦鍗?// ============================================================
 function getWeightSettings(project) {
   return state.find(t => t.project === project && t.type === 'weight-settings');
 }
@@ -3007,8 +3158,7 @@ function getWeightRecords(project) {
 }
 function renderWeight() {
   const mod = document.getElementById('modWeight');
-  // 减重打卡模块只在个人生活项目下显示
-  if (currentProject !== 'personal') {
+  // 鍑忛噸鎵撳崱妯″潡鍙湪涓汉鐢熸椿椤圭洰涓嬫樉绀?  if (currentProject !== 'personal') {
     if (mod) mod.classList.add('hidden');
     return;
   } else {
@@ -3020,8 +3170,8 @@ function renderWeight() {
   if (!settings) {
     c.innerHTML = `
       <div class="weight-empty-cta">
-        ⚖️ 设置一下你的起点和目标，开始减重之旅吧<br>
-        <button onclick="openWeightSettingModal()">设置目标</button>
+        鈿栵笍 璁剧疆涓€涓嬩綘鐨勮捣鐐瑰拰鐩爣锛屽紑濮嬪噺閲嶄箣鏃呭惂<br>
+        <button onclick="openWeightSettingModal()">璁剧疆鐩爣</button>
       </div>
     `;
     return;
@@ -3037,9 +3187,9 @@ function renderWeight() {
   const summaryHtml = `
     <div class="weight-summary">
       <div class="weight-summary-row">
-        <div class="start">起点<strong>${settings.startWeight.toFixed(1)}<span style="font-size:11px;font-weight:400"> kg</span></strong></div>
-        <div class="arrow">→</div>
-        <div class="target">目标<strong>${settings.targetWeight.toFixed(1)}<span style="font-size:11px;font-weight:400"> kg</span></strong></div>
+        <div class="start">璧风偣<strong>${settings.startWeight.toFixed(1)}<span style="font-size:11px;font-weight:400"> kg</span></strong></div>
+        <div class="arrow">鈫?/div>
+        <div class="target">鐩爣<strong>${settings.targetWeight.toFixed(1)}<span style="font-size:11px;font-weight:400"> kg</span></strong></div>
       </div>
       <div class="weight-progress-row">
         <div class="weight-progress-num">${currentWeight.toFixed(1)}<span class="unit">kg</span></div>
@@ -3048,7 +3198,7 @@ function renderWeight() {
             <div class="progress-fill ${reached?'done':''}" style="width:${progress}%"></div>
           </div>
           <div class="muted tiny" style="margin-top:4px;text-align:center">
-            ${reached ? '🎉 已达成目标！保持就好' : `已减 ${lost.toFixed(1)} kg · 还需减 ${remaining.toFixed(1)} kg · ${progress}%`}
+            ${reached ? '馃帀 宸茶揪鎴愮洰鏍囷紒淇濇寔灏卞ソ' : `宸插噺 ${lost.toFixed(1)} kg 路 杩橀渶鍑?${remaining.toFixed(1)} kg 路 ${progress}%`}
           </div>
         </div>
       </div>
@@ -3060,15 +3210,15 @@ function renderWeight() {
   const recent = records.slice(-7).reverse();
   const listHtml = `
     <div class="weight-records">
-      ${recent.length === 0 ? '<div class="empty">还没有打卡记录</div>' : recent.map((r, i) => {
+      ${recent.length === 0 ? '<div class="empty">杩樻病鏈夋墦鍗¤褰?/div>' : recent.map((r, i) => {
         const idx = records.indexOf(r);
         const prevRec = records[idx - 1];
-        let deltaCls = 'same', deltaText = (i === recent.length - 1 ? '起点' : '—');
+        let deltaCls = 'same', deltaText = (i === recent.length - 1 ? '璧风偣' : '鈥?);
         if (prevRec) {
           const delta = +(r.weight - prevRec.weight).toFixed(1);
-          if (delta < 0) { deltaCls = 'down'; deltaText = '↓ ' + Math.abs(delta).toFixed(1); }
-          else if (delta > 0) { deltaCls = 'up'; deltaText = '↑ ' + delta.toFixed(1); }
-          else { deltaCls = 'same'; deltaText = '±0'; }
+          if (delta < 0) { deltaCls = 'down'; deltaText = '鈫?' + Math.abs(delta).toFixed(1); }
+          else if (delta > 0) { deltaCls = 'up'; deltaText = '鈫?' + delta.toFixed(1); }
+          else { deltaCls = 'same'; deltaText = '卤0'; }
         }
         return `
           <div class="weight-record">
@@ -3076,7 +3226,7 @@ function renderWeight() {
             <span class="num">${r.weight.toFixed(1)} kg</span>
             <span class="delta ${deltaCls}">${deltaText}</span>
             <span class="note">${escapeHtml(r.note || '')}</span>
-            <button class="del-mini" onclick="deleteWeightRecord('${r.id}')" title="删除">×</button>
+            <button class="del-mini" onclick="deleteWeightRecord('${r.id}')" title="鍒犻櫎">脳</button>
           </div>
         `;
       }).join('')}
@@ -3088,10 +3238,10 @@ function renderWeight() {
 
 function renderWeightChart(records, settings) {
   if (!settings) return '';
-  if (records.length === 0) return '<div style="padding:20px;text-align:center;color:var(--text-lighter);font-size:13px">还没有数据，先打一次卡吧</div>';
+  if (records.length === 0) return '<div style="padding:20px;text-align:center;color:var(--text-lighter);font-size:13px">杩樻病鏈夋暟鎹紝鍏堟墦涓€娆″崱鍚?/div>';
   const data = records.slice(-30);
   if (data.length < 2) {
-    return '<div style="padding:14px;text-align:center;color:var(--text-lighter);font-size:12px">再打卡 1 次就能看到趋势线</div>';
+    return '<div style="padding:14px;text-align:center;color:var(--text-lighter);font-size:12px">鍐嶆墦鍗?1 娆″氨鑳界湅鍒拌秼鍔跨嚎</div>';
   }
   const W = 320, H = 140;
   const padL = 32, padR = 12, padT = 14, padB = 22;
@@ -3129,7 +3279,7 @@ function renderWeightChart(records, settings) {
       <line x1="${padL}" y1="${padT + chartH/2}" x2="${W - padR}" y2="${padT + chartH/2}" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="2 3"/>
       <line x1="${padL}" y1="${H - padB}" x2="${W - padR}" y2="${H - padB}" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="2 3"/>
       <line x1="${padL}" y1="${targetY.toFixed(1)}" x2="${W - padR}" y2="${targetY.toFixed(1)}" stroke="#10b981" stroke-width="1" stroke-dasharray="3 3"/>
-      <text x="${W - padR - 2}" y="${(targetY - 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#10b981">目标 ${settings.targetWeight}kg</text>
+      <text x="${W - padR - 2}" y="${(targetY - 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#10b981">鐩爣 ${settings.targetWeight}kg</text>
       <line x1="${padL}" y1="${startY.toFixed(1)}" x2="${W - padR}" y2="${startY.toFixed(1)}" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2 3"/>
       <path d="${areaPath}" fill="url(#weightGrad)"/>
       <path d="${path}" fill="none" stroke="#22c55e" stroke-width="2" stroke-linejoin="round"/>
@@ -3144,31 +3294,31 @@ window.openWeightSettingModal = function() {
   const s = getWeightSettings(currentProject);
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">⚖️ 减重目标设置</h3>
+      <h3 class="modal-title">鈿栵笍 鍑忛噸鐩爣璁剧疆</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field-row">
       <div class="field">
-        <label>起始体重 (kg)</label>
-        <input type="number" id="wsStart" step="0.1" value="${s ? s.startWeight : ''}" placeholder="例如 75.5">
+        <label>璧峰浣撻噸 (kg)</label>
+        <input type="number" id="wsStart" step="0.1" value="${s ? s.startWeight : ''}" placeholder="渚嬪 75.5">
       </div>
       <div class="field">
-        <label>目标体重 (kg)</label>
-        <input type="number" id="wsTarget" step="0.1" value="${s ? s.targetWeight : ''}" placeholder="例如 65">
+        <label>鐩爣浣撻噸 (kg)</label>
+        <input type="number" id="wsTarget" step="0.1" value="${s ? s.targetWeight : ''}" placeholder="渚嬪 65">
       </div>
     </div>
-    <p class="muted tiny" style="margin-top:-6px">设置一次即可，后续打卡查看进度。</p>
+    <p class="muted tiny" style="margin-top:-6px">璁剧疆涓€娆″嵆鍙紝鍚庣画鎵撳崱鏌ョ湅杩涘害銆?/p>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveWeightSetting()">保存</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveWeightSetting()">淇濆瓨</button>
     </div>
   `);
 };
 window.saveWeightSetting = function() {
   const start = parseFloat(document.getElementById('wsStart').value);
   const target = parseFloat(document.getElementById('wsTarget').value);
-  if (!start || !target || start <= 0 || target <= 0) return alert('请填写有效数字');
-  if (target >= start) return alert('目标体重需要小于起始体重');
+  if (!start || !target || start <= 0 || target <= 0) return alert('璇峰～鍐欐湁鏁堟暟瀛?);
+  if (target >= start) return alert('鐩爣浣撻噸闇€瑕佸皬浜庤捣濮嬩綋閲?);
   const existing = state.find(t => t.project === currentProject && t.type === 'weight-settings');
   if (existing) {
     existing.startWeight = start;
@@ -3190,31 +3340,31 @@ window.saveWeightSetting = function() {
 window.openWeightAddModal = function() {
   const settings = getWeightSettings(currentProject);
   if (!settings) {
-    if (confirm('还没设置目标体重，先去设置吗？')) openWeightSettingModal();
+    if (confirm('杩樻病璁剧疆鐩爣浣撻噸锛屽厛鍘昏缃悧锛?)) openWeightSettingModal();
     return;
   }
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">📏 今日体重打卡</h3>
+      <h3 class="modal-title">馃搹 浠婃棩浣撻噸鎵撳崱</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
     <div class="field-row">
       <div class="field">
-        <label>体重 (kg)</label>
-        <input type="number" id="wrNum" step="0.1" placeholder="例如 74.5">
+        <label>浣撻噸 (kg)</label>
+        <input type="number" id="wrNum" step="0.1" placeholder="渚嬪 74.5">
       </div>
       <div class="field">
-        <label>日期</label>
+        <label>鏃ユ湡</label>
         <input type="date" id="wrDate" value="${todayStr()}">
       </div>
     </div>
     <div class="field">
-      <label>备注（可选）</label>
-      <textarea id="wrNote" placeholder="比如：早上空腹"></textarea>
+      <label>澶囨敞锛堝彲閫夛級</label>
+      <textarea id="wrNote" placeholder="姣斿锛氭棭涓婄┖鑵?></textarea>
     </div>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="saveWeightRecord()">打卡</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="saveWeightRecord()">鎵撳崱</button>
     </div>
   `);
 };
@@ -3222,10 +3372,10 @@ window.saveWeightRecord = function() {
   const weight = parseFloat(document.getElementById('wrNum').value);
   const date = document.getElementById('wrDate').value || todayStr();
   const note = document.getElementById('wrNote').value.trim();
-  if (!weight || weight <= 0) return alert('请填写有效体重');
+  if (!weight || weight <= 0) return alert('璇峰～鍐欐湁鏁堜綋閲?);
   const existing = state.find(t => t.project === currentProject && t.type === 'weight-record' && t.date === date);
   if (existing) {
-    if (!confirm(`${date} 已经有一条打卡记录（${existing.weight} kg），要覆盖吗？`)) return;
+    if (!confirm(`${date} 宸茬粡鏈変竴鏉℃墦鍗¤褰曪紙${existing.weight} kg锛夛紝瑕佽鐩栧悧锛焋)) return;
     existing.weight = weight;
     existing.note = note;
     existing.createdAt = new Date().toISOString();
@@ -3243,7 +3393,7 @@ window.saveWeightRecord = function() {
   renderWeight();
 };
 window.deleteWeightRecord = function(id) {
-  if (!confirm('删除这条打卡记录？')) return;
+  if (!confirm('鍒犻櫎杩欐潯鎵撳崱璁板綍锛?)) return;
   state = state.filter(t => t.id !== id);
   saveState();
   renderWeight();
@@ -3254,56 +3404,56 @@ window.openWeightImportModal = function() {
   const recCount = getWeightRecords(currentProject).length;
   showModal(`
     <div class="modal-header">
-      <h3 class="modal-title">📋 批量导入体重</h3>
+      <h3 class="modal-title">馃搵 鎵归噺瀵煎叆浣撻噸</h3>
       <button class="modal-close" onclick="closeModal()">${ic('close')}</button>
     </div>
-    <p class="muted" style="font-size:12px;margin:0 0 10px 0">粘贴 JSON 数组，每条形如：<br>
-      <code style="background:var(--bg);padding:2px 6px;border-radius:3px;font-size:11px">{"date":"2026-07-20","weight":78.45,"note":"晨起便后"}</code>
+    <p class="muted" style="font-size:12px;margin:0 0 10px 0">绮樿创 JSON 鏁扮粍锛屾瘡鏉″舰濡傦細<br>
+      <code style="background:var(--bg);padding:2px 6px;border-radius:3px;font-size:11px">{"date":"2026-07-20","weight":78.45,"note":"鏅ㄨ捣渚垮悗"}</code>
     </p>
     <div class="field-row">
       <div class="field">
-        <label>起始体重 (kg)</label>
+        <label>璧峰浣撻噸 (kg)</label>
         <input type="number" id="wiStart" step="0.1" value="${settings ? settings.startWeight : '78.45'}">
       </div>
       <div class="field">
-        <label>目标体重 (kg)</label>
-        <input type="number" id="wiTarget" step="0.1" value="${settings ? settings.targetWeight : ''}" placeholder="例如 70">
+        <label>鐩爣浣撻噸 (kg)</label>
+        <input type="number" id="wiTarget" step="0.1" value="${settings ? settings.targetWeight : ''}" placeholder="渚嬪 70">
       </div>
     </div>
     <div class="field">
-      <label>数据</label>
-      <textarea id="wiJson" rows="9" placeholder='[{"date":"2026-07-20","weight":78.45,"note":"初始基准线"}]' style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.5"></textarea>
+      <label>鏁版嵁</label>
+      <textarea id="wiJson" rows="9" placeholder='[{"date":"2026-07-20","weight":78.45,"note":"鍒濆鍩哄噯绾?}]' style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;line-height:1.5"></textarea>
     </div>
     <label style="display:flex;align-items:center;gap:8px;font-size:13px;margin:4px 0 14px 0;color:var(--text-light);cursor:pointer;background:var(--warn-bg);padding:8px 12px;border-radius:8px;border:1px solid #fcd34d">
       <input type="checkbox" id="wiClear" ${recCount > 0 ? 'checked' : ''}>
-      <span><strong>导入前清空</strong>当前项目下所有 weight 数据 ${recCount > 0 ? `（含现有 ${recCount} 条）` : ''}</span>
+      <span><strong>瀵煎叆鍓嶆竻绌?/strong>褰撳墠椤圭洰涓嬫墍鏈?weight 鏁版嵁 ${recCount > 0 ? `锛堝惈鐜版湁 ${recCount} 鏉★級` : ''}</span>
     </label>
     <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal()">取消</button>
-      <button class="btn btn-primary" onclick="doWeightImport()">导入</button>
+      <button class="btn btn-secondary" onclick="closeModal()">鍙栨秷</button>
+      <button class="btn btn-primary" onclick="doWeightImport()">瀵煎叆</button>
     </div>
   `);
 };
 
 window.doWeightImport = function() {
   const raw = document.getElementById('wiJson').value.trim();
-  if (!raw) return alert('请粘贴 JSON 数据');
+  if (!raw) return alert('璇风矘璐?JSON 鏁版嵁');
   let arr;
   try { arr = JSON.parse(raw); }
-  catch(e) { return alert('JSON 解析失败：' + e.message + '\n检查一下逗号、引号、括号是否闭合'); }
-  if (!Array.isArray(arr)) return alert('需要的是 JSON 数组 []，不是单个对象');
+  catch(e) { return alert('JSON 瑙ｆ瀽澶辫触锛? + e.message + '\n妫€鏌ヤ竴涓嬮€楀彿銆佸紩鍙枫€佹嫭鍙锋槸鍚﹂棴鍚?); }
+  if (!Array.isArray(arr)) return alert('闇€瑕佺殑鏄?JSON 鏁扮粍 []锛屼笉鏄崟涓璞?);
   
   const startW = parseFloat(document.getElementById('wiStart').value);
   const targetW = parseFloat(document.getElementById('wiTarget').value);
-  if (!startW || startW <= 0) return alert('请填写有效的起始体重');
-  if (targetW && targetW >= startW) return alert('目标体重需要小于起始体重');
+  if (!startW || startW <= 0) return alert('璇峰～鍐欐湁鏁堢殑璧峰浣撻噸');
+  if (targetW && targetW >= startW) return alert('鐩爣浣撻噸闇€瑕佸皬浜庤捣濮嬩綋閲?);
   
   const clear = document.getElementById('wiClear').checked;
   if (clear) {
     state = state.filter(t => !(t.project === currentProject && (t.type === 'weight-settings' || t.type === 'weight-record')));
   }
   
-  // 写入 settings
+  // 鍐欏叆 settings
   const existingSettings = state.find(t => t.project === currentProject && t.type === 'weight-settings');
   if (existingSettings) {
     existingSettings.startWeight = startW;
@@ -3343,27 +3493,37 @@ window.doWeightImport = function() {
   saveState();
   closeModal();
   renderWeight();
-  alert(`导入完成：成功 ${added} 条${skipped ? '，跳过 ' + skipped + ' 条（数据无效）' : ''}`);
+  alert(`瀵煎叆瀹屾垚锛氭垚鍔?${added} 鏉?{skipped ? '锛岃烦杩?' + skipped + ' 鏉★紙鏁版嵁鏃犳晥锛? : ''}`);
 };
 
 // ============================================================
-// 启动
-// ============================================================
-loadState();
-if (state.length === 0) {
-  state = SAMPLE_DATA;
-  saveState();
-}
-setProject(localStorage.getItem(LS_CURRENT_PROJECT) || 'far-pump');
-migratePlans();
-migrateRoutineExample();
+// 鍚姩锛堝紓姝ワ細鍏堝垵濮嬪寲 Supabase锛屽啀鍔犺浇鏁版嵁锛屽啀娓叉煋锛?// ============================================================
+async function bootstrap() {
+  // 1. 鍒濆鍖?Supabase 瀹㈡埛绔?  initSupabase();
+  updateSyncBadge();
 
-// 数据升级：对已存在的账号，自动追加新版预置数据
-// （migrateWeightSamples 已在 setProject 内对 personal 项目自动处理）
-migratePlans();
-doneCollapsed = localStorage.getItem(LS_DONE_COLLAPSED) !== 'false';
-renderAll();
-bindEvents();
+  // 2. 鍔犺浇鏁版嵁锛堜簯绔紭鍏堬紝鍥為€€ localStorage锛?  await loadState();
+
+  // 3. 棣栨绌烘暟鎹椂鍔犺浇绀轰緥
+  if (state.length === 0) {
+    state = SAMPLE_DATA;
+    await saveState();
+  }
+
+  // 4. 椤圭洰璁剧疆 + 鏁版嵁杩佺Щ
+  setProject(localStorage.getItem(LS_CURRENT_PROJECT) || 'far-pump');
+  migratePlans();
+  migrateRoutineExample();
+  migrateWeightSamples();
+  doneCollapsed = localStorage.getItem(LS_DONE_COLLAPSED) !== 'false';
+
+  // 5. 棣栨娓叉煋
+  renderAll();
+  bindEvents();
+
+  // 6. 鍚姩瀹炴椂鍚屾锛堜簯绔湁鏀瑰姩鑷姩鏇存柊鏈満锛?  subscribeRealtime();
+}
+bootstrap();
 </script>
 </body>
 </html>
