@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工作台急救诊断</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f7f6;
+    color: #1f2937;
+    padding: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  h1 { font-size: 22px; margin-bottom: 6px; color: #15803d; }
+  .sub { color: #6b7280; font-size: 14px; margin-bottom: 20px; }
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .card h2 { font-size: 16px; margin-bottom: 10px; color: #111827; }
+  .stat-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed #e5e7eb; font-size: 15px; }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-row .label { color: #6b7280; }
+  .stat-row .val { font-weight: 600; color: #111827; word-break: break-all; text-align: right; max-width: 60%; }
+  .bad { color: #dc2626; font-weight: 600; }
+  .ok { color: #16a34a; font-weight: 600; }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    min-height: 48px;
+  }
+  .btn-green { background: #22c55e; color: #fff; }
+  .btn-green:hover { background: #16a34a; }
+  .btn-red { background: #fee2e2; color: #dc2626; }
+  .btn-red:hover { background: #fecaca; }
+  .btn-gray { background: #e5e7eb; color: #374151; }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+  .note { background: #fefce8; border: 1px solid #fde68a; border-radius: 10px; padding: 12px; font-size: 14px; color: #854d0e; margin-bottom: 14px; }
+  .pre { background: #f9fafb; border-radius: 8px; padding: 10px; font-size: 13px; font-family: Consolas, monospace; white-space: pre-wrap; word-break: break-all; max-height: 260px; overflow: auto; }
+  #status { text-align: center; padding: 20px; color: #6b7280; }
+</style>
+</head>
+<body>
+
+<h1>🛠️ 工作台急救诊断</h1>
+<div class="sub">这个页面不会加载工作台，只读取你浏览器里存的数据，帮你定位卡死原因。</div>
+
+<div class="note" id="note" style="display:none"></div>
+
+<div class="card" id="card-status">
+  <h2>📊 本地数据概览</h2>
+  <div id="status">正在读取…</div>
+</div>
+
+<div class="card" id="card-issues" style="display:none">
+  <h2>⚠️ 发现的异常</h2>
+  <div id="issues"></div>
+</div>
+
+<div class="card" id="card-preview" style="display:none">
+  <h2>🔍 数据预览（前 20 条）</h2>
+  <div class="pre" id="preview"></div>
+</div>
+
+<div class="card">
+  <h2>💾 备份与恢复</h2>
+  <button class="btn btn-green" id="btn-export" disabled>⬇️ 导出数据备份（JSON）</button>
+  <button class="btn btn-gray" id="btn-preview" disabled>👀 预览数据内容</button>
+  <button class="btn btn-red" id="btn-clear" disabled>🗑️ 清空本地数据（慎用！）</button>
+  <div class="sub" style="margin-top:10px">清空前请先导出备份。清空后刷新工作台即可恢复，但旧数据不会自动回来。</div>
+</div>
+
+<div class="card">
+  <h2>🔗 快速操作</h2>
+  <button class="btn btn-green" onclick="location.href='/'">➡️ 打开工作台</button>
+</div>
+
+<script>
+(function(){
+  var KEY = 'wb_todo_all';
+  var raw = null;
+  var parsed = null;
+
+  function $(id) { return document.getElementById(id); }
+
+  function analyze() {
+    var out = [];
+    var allKeys = [];
+    for (var i = 0; i < localStorage.length; i++) {
+      allKeys.push(localStorage.key(i));
+    }
+    out.push(['本地存储 key 数量', allKeys.length + ' 个']);
+    out.push(['工作台数据 key', KEY]);
+    out.push(['当前项目 key', localStorage.getItem('wb_todo_current_project') || '(无)']);
+
+    raw = null;
+    try { raw = localStorage.getItem(KEY); } catch(e) { raw = null; }
+
+    if (raw === null) {
+      out.push(['工作台数据', '❌ 不存在（这就是问题？）']);
+      renderStats(out);
+      $('btn-export').disabled = true;
+      $('btn-preview').disabled = true;
+      $('btn-clear').disabled = true;
+      $('card-issues').style.display = 'none';
+      return;
+    }
+
+    var bytes = new Blob([raw]).size;
+    out.push(['数据大小', bytes + ' 字节 (' + (bytes/1024).toFixed(1) + ' KB)']);
+    out.push(['是否 JSON', '']);
+    try {
+      parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        out.push(['JSON 解析', '✅ 是数组']);
+        out.push(['数据条数', parsed.length + ' 条']);
+
+        // 类型分布
+        var typeCount = {};
+        var projCount = {};
+        var badDates = [];
+        var longFields = [];
+        var weird = [];
+        parsed.forEach(function(t, idx) {
+          if (!t || typeof t !== 'object') { weird.push('第 ' + idx + ' 条不是对象'); return; }
+          var tp = t.type || '(无type)';
+          typeCount[tp] = (typeCount[tp] || 0) + 1;
+          var pj = t.project || '(无project)';
+          projCount[pj] = (projCount[pj] || 0) + 1;
+          // 检查日期格式
+          ['date','dueDate','scheduledDate','doneDate'].forEach(function(f){
+            if (t[f] && !/^\d{4}-\d{2}-\d{2}$/.test(t[f])) {
+              badDates.push('第 ' + idx + ' 条 ' + f + ' 异常值: ' + JSON.stringify(t[f]).slice(0, 60));
+            }
+          });
+          // 检查超长字符串
+          JSON.stringify(t, function(k, v) {
+            if (typeof v === 'string' && v.length > 2000) longFields.push('第 ' + idx + ' 条 ' + k + ' 超长: ' + v.length + ' 字符');
+            return v;
+          });
+        });
+        out.push(['类型分布', JSON.stringify(typeCount)]);
+        out.push(['项目分布', JSON.stringify(projCount)]);
+
+        var issues = [];
+        if (badDates.length) issues.push('⚠️ 发现 ' + badDates.length + ' 个非标准日期格式（可能触发渲染异常）：\n' + badDates.slice(0, 10).join('\n'));
+        if (longFields.length) issues.push('⚠️ 发现 ' + longFields.length + ' 个超长字段：\n' + longFields.slice(0, 5).join('\n'));
+        if (weird.length) issues.push('⚠️ ' + weird.slice(0, 5).join('\n'));
+        if (!issues.length) issues.push('✅ 未发现明显异常，数据格式正常');
+        $('issues').innerHTML = issues.map(function(s){ return '<div style="font-size:14px;margin-bottom:8px;white-space:pre-wrap">' + s.replace(/</g,'&lt;') + '</div>'; }).join('');
+        $('card-issues').style.display = 'block';
+      } else {
+        out.push(['JSON 解析', '❌ 不是数组，是: ' + typeof parsed]);
+        $('card-issues').style.display = 'none';
+      }
+    } catch(e) {
+      out.push(['JSON 解析', '❌ 失败: ' + e.message]);
+      out.push(['原始数据前 200 字符', JSON.stringify(raw.slice(0,200))]);
+      $('card-issues').style.display = 'none';
+    }
+    renderStats(out);
+
+    // 预览
+    if (parsed && Array.isArray(parsed)) {
+      $('preview').textContent = JSON.stringify(parsed.slice(0, 20), null, 1);
+      $('card-preview').style.display = 'block';
+      $('btn-preview').disabled = false;
+      $('btn-export').disabled = false;
+      $('btn-clear').disabled = false;
+    }
+  }
+
+  function renderStats(rows) {
+    var html = '';
+    rows.forEach(function(r){
+      html += '<div class="stat-row"><span class="label">' + r[0] + '</span><span class="val">' + r[1] + '</span></div>';
+    });
+    $('status').innerHTML = html;
+  }
+
+  // 导出
+  $('btn-export').addEventListener('click', function(){
+    if (!raw) return;
+    var blob = new Blob([raw], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'workbench-backup-' + new Date().toISOString().slice(0,10) + '.json';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function(){ document.body.removeChild(a); URL.revokeObjectURL(a.href); }, 500);
+  });
+
+  // 预览
+  $('btn-preview').addEventListener('click', function(){
+    $('card-preview').style.display = 'block';
+    $('card-preview').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // 清空（二次确认）
+  $('btn-clear').addEventListener('click', function(){
+    if (!confirm('确定要清空这个浏览器里所有工作台数据吗？\n\n此操作不可恢复！强烈建议先导出备份。')) return;
+    if (!confirm('最后确认：真的要清空吗？清空后工作台会回到初始示例状态。')) return;
+    try {
+      var removed = [];
+      for (var i = localStorage.length - 1; i >= 0; i--) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf('wb_') === 0) { removed.push(k); localStorage.removeItem(k); }
+      }
+      $('note').style.display = 'block';
+      $('note').textContent = '✅ 已清空 ' + removed.length + ' 个 wb_ 开头的 key（含 wb_todo_all）。现在点下方「打开工作台」，应该就是全新的示例页面了。';
+      analyze();
+    } catch(e) {
+      alert('清空失败: ' + e.message);
+    }
+  });
+
+  // 读取后自动高亮提示
+  try {
+    var k = localStorage.getItem('wb_todo_all');
+    if (k && k.length > 0) {
+      $('note').style.display = 'block';
+      var size = new Blob([k]).size;
+      $('note').textContent = '✅ 检测到本地有工作台数据（' + (size/1024).toFixed(1) + ' KB）。如果工作台卡死，先点下面「导出数据备份」，再点「清空本地数据」即可恢复。';
+    }
+  } catch(e) {}
+
+  analyze();
+})();
+</script>
+</body>
+</html>
