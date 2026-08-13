@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+<script>
+// 启动保护：若 8 秒后工作台仍未就绪，自动跳到纯离线版
+(function(){
+  window.__wbReady = false;
+  var t = setTimeout(function(){
+    if (!window.__wbReady && !window.__wbFallbackShown) {
+      window.__wbFallbackShown = true;
+      document.body && (document.body.innerHTML = '<div style="padding:30px;text-align:center;font-family:sans-serif"><h2>工作台加载超时</h2><p>当前网络或浏览器无法连接云服务，正在切换到离线版...</p><p>如果长时间未跳转，请直接打开：<a href="./offline.html">离线版工作台</a></p></div>');
+      setTimeout(function(){ location.href = './offline.html'; }, 1500);
+    }
+  }, 8000);
+  window.__wbClearStartupGuard = function(){ clearTimeout(t); window.__wbReady = true; };
+})();
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3568,6 +3582,9 @@ async function bootstrap() {
   // 5. 首次渲染
   renderAll();
   bindEvents();
+
+  // 工作台已就绪，取消启动保护
+  if (window.__wbClearStartupGuard) window.__wbClearStartupGuard();
 
   // 6. 启动实时同步（云端有改动自动更新本机）
   subscribeRealtime();
